@@ -1,0 +1,2019 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AMAIRA Urology and Fertility Care</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="AMAIRA Urology and Fertility Care">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <style>
+
+        .navigation {
+            width: 100%;
+            height: 70px;
+            display: table;
+            position: relative;
+            font-family: inherit;
+            background-color: #fff;
+        }
+
+            .navigation * {
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+        .navigation-portrait {
+            height: 48px;
+        }
+
+        .navigation-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 19998;
+        }
+
+        .navigation-hidden {
+            width: 0 !important;
+            height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .align-to-right {
+            float: right;
+        }
+
+        .nav-header {
+            float: left;
+        }
+
+        .navigation-hidden .nav-header {
+            display: none;
+        }
+
+        .nav-brand {
+            line-height: 70px;
+            padding: 0;
+            color: #343a40;
+            font-size: 24px;
+            text-decoration: none !important;
+        }
+
+            .nav-brand:hover,
+            .nav-brand:focus {
+                color: #343a40;
+            }
+
+        .navigation-portrait .nav-brand {
+            font-size: 18px;
+            line-height: 48px;
+        }
+
+        .nav-logo > img {
+            height: 48px;
+            margin: 11px auto;
+            padding: 0 15px;
+            float: left;
+        }
+
+        .nav-logo:focus > img {
+            outline: initial;
+        }
+
+        .navigation-portrait .nav-logo > img {
+            height: 36px;
+            margin: 6px auto 6px 15px;
+            padding: 0;
+        }
+
+        .nav-toggle {
+            width: 30px;
+            height: 30px;
+            padding: 6px 2px 0;
+            position: absolute;
+            top: 50%;
+            margin-top: -14px;
+            right: 15px;
+            display: none;
+            cursor: pointer;
+        }
+
+            .nav-toggle:before {
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                background-color: #343a40;
+                border-radius: 10px;
+                box-shadow: 0 0.5em 0 0 #343a40, 0 1em 0 0 #343a40;
+            }
+
+        .navigation-portrait .nav-toggle {
+            display: block;
+        }
+
+        .navigation-portrait .nav-menus-wrapper {
+            width: 320px;
+            height: 100%;
+            top: 0;
+            left: -400px;
+            position: fixed;
+            background-color: #fff;
+            z-index: 20000;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+        }
+
+            .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right {
+                left: auto;
+                right: -400px;
+            }
+
+            .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-open {
+                left: 0;
+            }
+
+            .navigation-portrait
+            .nav-menus-wrapper.nav-menus-wrapper-right.nav-menus-wrapper-open {
+                left: auto;
+                right: 0;
+            }
+
+        .nav-menus-wrapper-close-button {
+            width: 30px;
+            height: 40px;
+            margin: 10px 7px;
+            display: none;
+            float: right;
+            color: #343a40;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        .navigation-portrait .nav-menus-wrapper-close-button {
+            display: block;
+        }
+
+        .nav-menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            line-height: normal;
+            font-size: 0;
+        }
+
+        .navigation-portrait .nav-menu {
+            width: 100%;
+        }
+
+        .navigation-landscape .nav-menu.nav-menu-centered {
+            float: none;
+            text-align: center;
+        }
+
+            .navigation-landscape .nav-menu.nav-menu-centered > li {
+                float: none;
+            }
+
+        .nav-menu > li {
+            display: inline-block;
+            float: left;
+            text-align: left;
+        }
+
+        .navigation-portrait .nav-menu > li {
+            width: 100%;
+            position: relative;
+            border-top: solid 1px #f0f0f0;
+        }
+
+            .navigation-portrait .nav-menu > li:last-child {
+                border-bottom: solid 1px #f0f0f0;
+            }
+
+        .nav-menu + .nav-menu > li:first-child {
+            border-top: none;
+        }
+
+        .nav-menu > li > a {
+            height: 70px;
+            padding: 26px 15px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 14px;
+            color: #343a40;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        .navigation-portrait .nav-menu > li > a {
+            width: 100%;
+            height: auto;
+            padding: 12px 15px 12px 26px;
+        }
+
+        .nav-menu > li:hover > a,
+        .nav-menu > li.active > a,
+        .nav-menu > li.focus > a {
+            color: #ff6b00;
+        }
+
+        .nav-menu > li > a > i,
+        .nav-menu > li > a > [class*="ion-"] {
+            width: 18px;
+            height: 16px;
+            line-height: 16px;
+            transform: scale(1.4);
+        }
+
+        .nav-menu > li > a > [class*="ion-"] {
+            width: 16px;
+            display: inline-block;
+            transform: scale(1.8);
+        }
+
+        .navigation-portrait .nav-menu.nav-menu-social {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-menu.nav-menu-social > li {
+            text-align: center;
+            float: none;
+            border: none !important;
+        }
+
+        .navigation-portrait .nav-menu.nav-menu-social > li {
+            width: auto;
+        }
+
+        .nav-menu.nav-menu-social > li > a > [class*="ion-"] {
+            font-size: 12px;
+        }
+
+        .nav-menu.nav-menu-social > li > a > .fa {
+            font-size: 14px;
+        }
+
+        .navigation-portrait .nav-menu.nav-menu-social > li > a {
+            padding: 15px;
+        }
+
+        .submenu-indicator {
+            margin-left: 6px;
+            margin-top: 6px;
+            float: right;
+            transition: all 0.2s;
+        }
+
+        .navigation-portrait .submenu-indicator {
+            width: 54px;
+            height: 44px;
+            margin-top: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+            z-index: 20000;
+        }
+
+        .submenu-indicator-chevron {
+            height: 6px;
+            width: 6px;
+            display: block;
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+            border-color: transparent #70798b #70798b transparent;
+            transform: rotate(45deg);
+            transition: border 0.2s;
+        }
+
+        .navigation-portrait .submenu-indicator-chevron {
+            position: absolute;
+            top: 18px;
+            left: 24px;
+        }
+
+        .nav-menu > li:hover > a .submenu-indicator-chevron,
+        .nav-menu > .active > a .submenu-indicator-chevron,
+        .nav-menu > .focus > a .submenu-indicator-chevron {
+            border-color: transparent #967adc #967adc transparent;
+        }
+
+        .navigation-portrait .submenu-indicator.submenu-indicator-up {
+            transform: rotate(-180deg);
+        }
+
+        .nav-overlay-panel {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: none;
+            z-index: 19999;
+        }
+
+        .no-scroll {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .nav-search {
+            height: 70px;
+            float: right;
+            z-index: 19998;
+        }
+
+        .navigation-portrait .nav-search {
+            height: 48px;
+            padding: 0 10px;
+            margin-right: 52px;
+        }
+
+        .navigation-hidden .nav-search {
+            display: none;
+        }
+
+        .nav-search-button {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #fbfcfd;
+        }
+
+        .navigation-portrait .nav-search-button {
+            width: 50px;
+            height: 48px;
+            line-height: 46px;
+            font-size: 22px;
+        }
+
+        .nav-search-icon {
+            width: 14px;
+            height: 14px;
+            margin: 2px 8px 8px 4px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            color: #343a40;
+            text-align: left;
+            text-indent: -9999px;
+            border: 2px solid;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+
+            .nav-search-icon:after,
+            .nav-search-icon:before {
+                content: "";
+                pointer-events: none;
+            }
+
+            .nav-search-icon:before {
+                width: 2px;
+                height: 11px;
+                top: 11px;
+                position: absolute;
+                left: 50%;
+                border-radius: 0 0 1px 1px;
+                box-shadow: inset 0 0 0 32px;
+                transform: translateX(-50%);
+            }
+
+        .nav-search-button:hover .nav-search-icon {
+            color: #ff6b00;
+        }
+
+        .nav-search > form {
+            width: 100%;
+            height: 100%;
+            padding: 0 auto;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            z-index: 99;
+        }
+
+        .nav-search-inner {
+            width: 70%;
+            height: 70px;
+            margin: auto;
+            display: table;
+        }
+
+        .navigation-portrait .nav-search-inner {
+            height: 48px;
+        }
+
+        .nav-search-inner input[type="text"],
+        .nav-search-inner input[type="search"] {
+            height: 70px;
+            width: 100%;
+            margin: 0;
+            padding: 0 12px;
+            font-size: 26px;
+            text-align: center;
+            color: #343a40;
+            outline: none;
+            line-height: 70px;
+            border: none;
+            background-color: transparent;
+            transition: all 0.3s;
+        }
+
+        .navigation-portrait .nav-search-inner input[type="text"],
+        .navigation-portrait .nav-search-inner input[type="search"] {
+            height: 48px;
+            font-size: 18px;
+            line-height: 48px;
+        }
+
+        .nav-search-close-button {
+            width: 28px;
+            height: 28px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            line-height: normal;
+            color: #343a40;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .navigation-portrait .nav-search-close-button {
+            top: 10px;
+            right: 14px;
+        }
+
+        .nav-button {
+            margin: 18px 15px 0;
+            padding: 8px 14px;
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+            .nav-button:hover,
+            .nav-button:focus {
+                color: #fff;
+                text-decoration: none;
+            }
+
+        .navigation-portrait .nav-button {
+            width: calc(100% - 52px);
+            margin: 17px 26px;
+        }
+
+        .nav-text {
+            margin: 25px 15px;
+            display: inline-block;
+            color: #343a40;
+            font-size: 14px;
+        }
+
+        .navigation-portrait .nav-text {
+            width: calc(100% - 52px);
+            margin: 12px 26px 0;
+        }
+
+            .navigation-portrait .nav-text + ul {
+                margin-top: 15px;
+            }
+
+        .nav-dropdown {
+            min-width: 180px;
+            margin: 0;
+            padding: 0;
+            display: none;
+            position: absolute;
+            list-style: none;
+            z-index: 98;
+            white-space: nowrap;
+        }
+
+        .navigation-portrait .nav-dropdown {
+            width: 100%;
+            position: static;
+            left: 0;
+        }
+
+        .nav-dropdown .nav-dropdown {
+            left: 100%;
+        }
+
+        .nav-menu > li > .nav-dropdown {
+            border-top: solid 1px #f0f0f0;
+        }
+
+        .nav-dropdown > li {
+            width: 100%;
+            float: left;
+            clear: both;
+            position: relative;
+            text-align: left;
+        }
+
+            .nav-dropdown > li > a {
+                width: 100%;
+                padding: 16px 20px;
+                display: inline-block;
+                text-decoration: none;
+                float: left;
+                font-size: 13px;
+                color: #343a40;
+                background-color: #fdfdfd;
+            }
+
+            .nav-dropdown > li:hover > a,
+            .nav-dropdown > li.focus > a {
+                color: #ff6b00;
+            }
+
+        .nav-dropdown.nav-dropdown-left {
+            right: 0;
+        }
+
+        .nav-dropdown > li > .nav-dropdown-left {
+            left: auto;
+            right: 100%;
+        }
+
+        .navigation-landscape .nav-dropdown.nav-dropdown-left > li > a {
+            text-align: right;
+        }
+
+        .navigation-portrait .nav-dropdown > li > a {
+            padding: 12px 20px 12px 30px;
+        }
+
+        .navigation-portrait .nav-dropdown > li > ul > li > a {
+            padding-left: 50px;
+        }
+
+        .navigation-portrait .nav-dropdown > li > ul > li > ul > li > a {
+            padding-left: 70px;
+        }
+
+        .navigation-portrait .nav-dropdown > li > ul > li > ul > li > ul > li > a {
+            padding-left: 90px;
+        }
+
+        .navigation-portrait
+        .nav-dropdown > li > ul > li > ul > li > ul > li > ul > li > a {
+            padding-left: 110px;
+        }
+
+        .nav-dropdown .submenu-indicator {
+            right: 15px;
+            top: 10px;
+            position: absolute;
+        }
+
+        .navigation-portrait .nav-dropdown .submenu-indicator {
+            right: 0;
+            top: 0;
+        }
+
+        .nav-dropdown .submenu-indicator .submenu-indicator-chevron {
+            transform: rotate(-45deg);
+        }
+
+        .navigation-portrait
+        .nav-dropdown
+        .submenu-indicator
+        .submenu-indicator-chevron {
+            transform: rotate(45deg);
+        }
+
+        .nav-dropdown > li:hover > a .submenu-indicator-chevron,
+        .nav-dropdown > .focus > a .submenu-indicator-chevron {
+            border-color: transparent #ff6b00 #ff6b00 transparent;
+        }
+
+        .navigation-landscape .nav-dropdown.nav-dropdown-left .submenu-indicator {
+            left: 10px;
+        }
+
+            .navigation-landscape
+            .nav-dropdown.nav-dropdown-left
+            .submenu-indicator
+            .submenu-indicator-chevron {
+                transform: rotate(135deg);
+            }
+
+        .nav-dropdown-horizontal {
+            width: 100%;
+            left: 0;
+            background-color: #fdfdfd;
+            border-top: solid 1px #f0f0f0;
+        }
+
+            .nav-dropdown-horizontal .nav-dropdown-horizontal {
+                width: 100%;
+                top: 100%;
+                left: 0;
+            }
+
+        .navigation-portrait .nav-dropdown-horizontal .nav-dropdown-horizontal {
+            border-top: none;
+        }
+
+        .nav-dropdown-horizontal > li {
+            width: auto;
+            clear: none;
+            position: static;
+        }
+
+        .navigation-portrait .nav-dropdown-horizontal > li {
+            width: 100%;
+        }
+
+        .nav-dropdown-horizontal > li > a {
+            position: relative;
+        }
+
+        .nav-dropdown-horizontal .submenu-indicator {
+            height: 18px;
+            top: 11px;
+            transform: rotate(90deg);
+        }
+
+        .navigation-portrait .nav-dropdown-horizontal .submenu-indicator {
+            height: 42px;
+            top: 0;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+            .navigation-portrait
+            .nav-dropdown-horizontal
+            .submenu-indicator.submenu-indicator-up {
+                transform: rotate(-180deg);
+            }
+
+        .megamenu-panel {
+            width: 100%;
+            padding: 15px;
+            display: none;
+            position: absolute;
+            font-size: 14px;
+            z-index: 98;
+            text-align: left;
+            color: inherit;
+            border-top: solid 1px #f0f0f0;
+            background-color: #fdfdfd;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+        }
+
+        .navigation-portrait .megamenu-panel {
+            padding: 25px;
+            position: static;
+            display: block;
+        }
+
+        .megamenu-panel [class*="container"] {
+            width: 100%;
+        }
+
+            .megamenu-panel [class*="container"] [class*="col-"] {
+                padding: 0;
+            }
+
+        .megamenu-panel-half {
+            width: 50%;
+        }
+
+        .megamenu-panel-quarter {
+            width: 25%;
+        }
+
+        .navigation-portrait .megamenu-panel-half,
+        .navigation-portrait .megamenu-panel-quarter {
+            width: 100%;
+        }
+
+        .megamenu-panel-row {
+            width: 100%;
+        }
+
+            .megamenu-panel-row:before,
+            .megamenu-panel-row:after {
+                content: "";
+                display: table;
+                line-height: 0;
+            }
+
+            .megamenu-panel-row:after {
+                clear: both;
+            }
+
+            .megamenu-panel-row [class*="col-"] {
+                display: block;
+                min-height: 20px;
+                float: left;
+                margin-left: 3%;
+            }
+
+                .megamenu-panel-row [class*="col-"]:first-child {
+                    margin-left: 0;
+                }
+
+        .navigation-portrait .megamenu-panel-row [class*="col-"] {
+            float: none;
+            display: block;
+            width: 100% !important;
+            margin-left: 0;
+            margin-top: 15px;
+        }
+
+        .navigation-portrait
+        .megamenu-panel-row:first-child
+        [class*="col-"]:first-child {
+            margin-top: 0;
+        }
+
+        .megamenu-panel-row .col-1 {
+            width: 5.583333333333%;
+        }
+
+        .megamenu-panel-row .col-2 {
+            width: 14.166666666666%;
+        }
+
+        .megamenu-panel-row .col-3 {
+            width: 22.75%;
+        }
+
+        .megamenu-panel-row .col-4 {
+            width: 31.333333333333%;
+        }
+
+        .megamenu-panel-row .col-5 {
+            width: 39.916666666667%;
+        }
+
+        .megamenu-panel-row .col-6 {
+            width: 48.5%;
+        }
+
+        .megamenu-panel-row .col-7 {
+            width: 57.083333333333%;
+        }
+
+        .megamenu-panel-row .col-8 {
+            width: 65.666666666667%;
+        }
+
+        .megamenu-panel-row .col-9 {
+            width: 74.25%;
+        }
+
+        .megamenu-panel-row .col-10 {
+            width: 82.833333333334%;
+        }
+
+        .megamenu-panel-row .col-11 {
+            width: 91.416666666667%;
+        }
+
+        .megamenu-panel-row .col-12 {
+            width: 100%;
+        }
+
+        .megamenu-tabs {
+            width: 100%;
+            float: left;
+            display: block;
+        }
+
+        .megamenu-tabs-nav {
+            width: 20%;
+            margin: 0;
+            padding: 0;
+            float: left;
+            list-style: none;
+        }
+
+        .navigation-portrait .megamenu-tabs-nav {
+            width: 100%;
+        }
+
+        .megamenu-tabs-nav > li > a {
+            width: 100%;
+            padding: 10px 16px;
+            float: left;
+            font-size: 13px;
+            text-decoration: none;
+            color: #343a40;
+            border: solid 1px #eff0f2;
+            outline: 0;
+            background-color: #fff;
+        }
+
+        .megamenu-tabs-nav > li.active a,
+        .megamenu-tabs-nav > li:hover a {
+            background-color: #f5f5f5;
+        }
+
+        .megamenu-tabs-pane {
+            width: 80%;
+            min-height: 30px;
+            padding: 20px;
+            float: right;
+            display: none;
+            font-size: 13px;
+            color: #343a40;
+            border: solid 1px #eff0f2;
+            background-color: #fff;
+        }
+
+            .megamenu-tabs-pane.active {
+                display: block;
+            }
+
+        .navigation-portrait .megamenu-tabs-pane {
+            width: 100%;
+        }
+
+        .megamenu-lists {
+            width: 100%;
+            display: table;
+        }
+
+        .megamenu-list {
+            width: 100%;
+            margin: 0 0 15px;
+            padding: 0;
+            display: inline-block;
+            float: left;
+            list-style: none;
+        }
+
+            .megamenu-list:last-child {
+                margin: 0;
+                border: none;
+            }
+
+        .navigation-landscape .megamenu-list {
+            margin: -15px 0;
+            padding: 20px 0;
+            border-right: solid 1px #f0f0f0;
+        }
+
+            .navigation-landscape .megamenu-list:last-child {
+                border: none;
+            }
+
+        .megamenu-list > li > a {
+            width: 100%;
+            padding: 10px 15px;
+            display: inline-block;
+            color: #343a40;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+            .megamenu-list > li > a:hover {
+                background-color: #ff6b00;
+                color: #fff;
+            }
+
+        .megamenu-list > li.megamenu-list-title > a {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #343a40;
+        }
+
+            .megamenu-list > li.megamenu-list-title > a:hover {
+                background-color: transparent;
+            }
+
+        .navigation-landscape .list-col-2 {
+            width: 50%;
+        }
+
+        .navigation-landscape .list-col-3 {
+            width: 33%;
+        }
+
+        .navigation-landscape .list-col-4 {
+            width: 25%;
+        }
+
+        .navigation-landscape .list-col-5 {
+            width: 20%;
+        }
+
+        .nav-menu > li > a {
+            color: #343a40;
+            text-transform: uppercase;
+        }
+
+        .nav-dropdown > li > a {
+            color: #343a40;
+            padding: 10px 20px;
+            border-bottom: 1px solid #f6f6f6;
+        }
+
+            .nav-dropdown > li > a:hover,
+            .nav-dropdown > li > a:focus {
+                color: #ff6b00;
+            }
+
+        .main_header_area.sticky {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 9999;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .transparent-menu {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 99;
+        }
+
+        .navigation-portrait .nav-menu > li > a {
+            width: 100%;
+            height: auto;
+            padding: 10px 10px 10px 30px;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+            .nav-dropdown > li > a,
+            .megamenu-list > li > a {
+                width: 65%;
+            }
+        }
+    </style>
+
+    <style>
+               
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {            
+            padding: 16px;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+
+  
+    <div class="super_container">
+        <!-- Header -->
+        <header class="header">
+            <special-header></special-header>
+        </header>
+    
+
+
+     
+
+
+
+        <!-- Home -->
+
+        <div class="home">
+            <div class="home_slider_container">
+                <!-- Home Slider -->
+                <div class="owl-carousel owl-theme home_slider">
+
+                    <!-- Slider Item -->
+                    <div class="owl-item">
+                        <div class="home_slider_background" style="background-image:url(images/home_background_3.jpg)"></div>
+                        <div class="home_content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="home_content_inner">
+                                            <div class="home_title"><h1>AMAIRA Urology and Fertility Care</h1></div>
+                                            <div class="home_text">
+                                                <p>Amaira Urology and Fertility Care took its inception in the year 2020 in the heart of the city at Majuragate. We began with an outpatient set up which has expanded to a 15 bedded hospital now with state of art facilities. It has a Fully equipped OT with a C-Arm, laser and premium endoscopy unit.</p>
+                                            </div>
+                                            <div class="button home_button" style="background-color: #EF5A6F">
+                                                <a href="about.html">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Progress -->
+
+            </div>
+        </div>
+    </div>
+
+        <!-- 3 Boxes -->
+
+        <div class="boxes">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Box -->
+                    <div class="col-lg-4 box_col">
+                        <div class="box working_hours" style="background-color: #536493">
+                            <div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width:29px; height:29px;"><img src="images/alarm-clock.svg" alt=""></div></div>
+                            <div class="box_title">Working Hours (Mon-Sat)</div>
+                            <div class="working_hours_list">
+                                <ul>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div>Morning</div>
+                                        <div class="ml-auto">10.00 am – 1.00 pm</div>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div>Evening</div>
+                                        <div class="ml-auto">5.00 pm – 7.00 pm</div>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div>Sunday</div>
+                                        <div class="ml-auto">On Call Bases</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box -->
+                    <div class="col-lg-4 box_col">
+                        <div class="box box_appointments" style="background-color: #536493">
+                            <div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 29px; height:29px;"><img src="images/phone-call.svg" alt=""></div></div>
+                            <div class="box_title">Free Consultation</div>
+                            <div class="working_hours_list">
+                                <ul>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div>Every Thursday</div>
+                                        <div class="ml-auto">5.00 pm – 7.00 pm</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box -->
+                    <div class="col-lg-4 box_col">
+                        <div class="box box_emergency" style="background-color: #536493">
+                            <div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 37px; height:37px; margin-left:-4px;"><img src="images/bell.svg" alt=""></div></div>
+                            <div class="box_title">Emergency Number</div>
+                            <div class="box_phone" style="color: whitesmoke"><b>+91 82008 50936</b></div>
+                            <div class="box_emergency_text">In Emergency Cases, Please call on this number.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br /><br /><br />
+
+        <!-- Icon Boxes -->
+
+        <div class="icon_boxes">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section_title"><h2>Why AMAIRA?</h2></div>
+                    </div>
+                </div>
+                <div class="row services_row">
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/1.png" alt="1"></div>
+                                <div class="service_title trans_200">High Clinical Experties</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/2.png" alt="2"></div>
+                                <div class="service_title trans_200">Affordable Treatment</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/3.png" alt=""></div>
+                                <div class="service_title trans_200">High <br /> Success Rate</div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/4.png" alt=""></div>
+                                <div class="service_title trans_200">Individualized Treatment Plan</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/5.png" alt=""></div>
+                                <div class="service_title trans_200">Comprehensive Care for Male</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/6.png" alt=""></div>
+                                <div class="service_title trans_200">Comprehensive Care for Female</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/7.png" alt=""></div>
+                                <div class="service_title trans_200">Ethics & <br /> Integrity</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="col-lg-3 service_col">
+                        
+                            <div class="service text-center trans_200">
+                                <div class="service_icon"><img class="svg" src="images/8.png" alt=""></div>
+                                <div class="service_title trans_200">Best <br /> Infrastructure</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About -->
+
+        <div class="about">
+            <div class="container">
+                <div class="row row-lg-eq-height">
+
+                    <!-- About Content -->
+                    <div class="col-lg-12">
+                        <div class="about_content">
+                            <div class="section_title"><h2>A great medical team to help your needs</h2></div>
+                            <br />
+
+                            <div class="row">
+                                <div class="column">
+                                    <div class="card">
+                                        <div style="background-color:#f9f9f9">
+                                        <img src="Yash-Vaidya.png" alt="Dr. Yash"></div><br />
+                                        <h3><b>Dr. Yash Vaidya</b></h3>
+                                        <p> 6 Years Experience</p>
+                                        <p>
+                                            MBBS, M.S. Gen Surgery,<br />
+                                            M.CH (Urology), BJMC (Ahmedabad)<br />
+                                            Consultant Urologist Andrologist & Advance Laproscopic Surgeon
+                                        </p>
+
+                                        <div class="button home_button" style="background-color: #EF5A6F">
+                                            <a href="https://wa.me/918200850936" target="_blank">Book an Appointment</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="column">
+                                    <div class="card">
+                                        <div style="background-color:#f9f9f9">
+                                            <img src="Nisha-Vaidya.png" alt="Dr. Nisha">
+                                        </div><br />
+                                        <h3><b>Dr. Nisha Vaidya</b></h3>
+                                        <p> 4 Years Experience</p>
+                                        <p>
+                                            MBBS, M.S.(Obs & Gynec)<br />
+                                            DNB, FNB ( Reproductive Medicine)<br />
+                                            Consultant Reproductive Medicine
+                                        </p>
+
+                                        <div class="button home_button" style="background-color: #EF5A6F">
+                                            <a href="https://wa.me/918200850936" target="_blank">Book an Appointment</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="video-section">
+            <h2 class="section-title">Our Videos</h2>
+            <div class="video-container">
+                <!-- First Video -->
+                <div class="video-item">
+                    <iframe 
+                        src="https://www.youtube.com/embed/58o4i8-gEaM?si=ZMQ23r2vPjFEk4i0" 
+                        title="Amaira" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+    
+                <!-- Second Video -->
+                <div class="video-item">
+                    <iframe 
+                        src="https://www.youtube.com/embed/Sb-BwXk27Ik?si=WO4q-3CxuLCbcBe6" 
+                        title="Amaira" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+    
+                <!-- Third Video -->
+                <div class="video-item">
+                    <iframe 
+                        src="https://www.youtube.com/embed/LHX2FUvWEsk?si=LbvRnL6SE5cRZqKC" 
+                        title="Amaira" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Other Services -->
+        <section class="services-section">
+            <h2 class="services-title">SPECIALISED SERVICES</h2>
+            <h1 class="services-subtitle">We Also Offer</h1>
+            <p class="services-description">
+                Comprehensive healthcare solutions, from expert guidance and diagnostics to personalized wellness support, all under one roof.
+            </p>
+            <div class="services-container">
+                <div class="other-service">
+                    <img src="./images/Pharmacy.png" alt="Pharmacy Icon" class="service-icon">
+                    <h3 class="service-title">Pharmacy</h3>
+                    
+            
+                </div>
+                <div class="other-service">
+                    <img src="./images/Lab Equipment.png" alt="Lab Icon" class="service-icon">
+                    <h3 class="service-title">Lab Services</h3>
+
+                </div>
+                <div class="other-service">
+                    <img src="./images/counselling.png" alt="Counselling Icon" class="service-icon">
+                    <h3 class="service-title">One to One Counselling</h3>
+                    
+                </div>
+                <div class="other-service">
+                    <img src="./images/physiotherapist.png" alt="Physiotherapy Icon" class="service-icon">
+                    <h3 class="service-title">Physiotherapy</h3>
+                    
+                </div>
+                <div class="other-service">
+                    <img src="./images/Dietitian service.png" alt="Dietician Icon" class="service-icon">
+                    <h3 class="service-title">Dietician</h3>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Instagram -->
+          
+
+
+<section class="instagram-section">
+    <div class="instagram-column">
+      <!-- Instagram Plugin -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/amairaurologyfertilitycare/" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:undefinedpx;height:undefinedpx;max-height:100%; width:undefinedpx;"><div style="padding:16px;"> <a id="main_link" href="amairaurologyfertilitycare/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="amairaurologyfertilitycare/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Shared post</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;">Time</time></p></div></blockquote><script src="https://www.instagram.com/embed.js"></script><script type="text/javascript" src="https://www.embedista.com/j/instagramfeed1707.js"></script><div style="overflow: auto; position: absolute; height: 0pt; width: 0pt;"><a href="https://www.embedista.com/instagramfeed">Embed Instagram Post</a> Code Generator</div></div>
+    
+    <div class="content-column">
+      <h2>Stay Connected with AMAIRA on Instagram!</h2>
+      <p>
+        Follow AMAIRA Urology & Fertility Care on Instagram for the latest updates, expert tips, and insights into urology and fertility care.
+      </p>
+      <p>
+        ✨ Discover patient success stories <br>
+                ✨ Learn about advanced treatments we offer <br>
+                ✨ Stay informed with health tips from our specialists <br>
+                ✨ Explore our state-of-the-art facilities <br>
+                
+                Join our growing community and be part of the journey toward better health and wellness! <br>
+                
+                📲 Follow us now: @amairaurologyfertilitycare
+      </p>
+      <a href="https://instagram.com/amairaurologyfertilitycare/" target="_blank" class="insta-btn">Follow Us on Instagram</a>
+    </div>
+  </section>
+
+    
+        <!-- Call to action -->
+
+        <div class="cta">
+            <div class="cta_background parallax-window" data-parallax="scroll" data-image-src="images/cta.jpg" data-speed="0.8"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="cta_content text-center">
+                            <h2>Book Appointment on Whatsapp!</h2>
+                            <p>If you want to book your appontment with Dr. Yash Or Dr. Nisha on Whatsapp, Please click on Book Now. </p>
+                            <div class="button cta_button" style="background-color: #EF5A6F"><a href="https://wa.me/918200850936" target="_blank">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Footer -->
+
+        <div class="footer">
+            <special-footer></special-footer>
+        </div>
+
+    </div>
+
+
+                <script src="js/jquery-3.2.1.min.js"></script>
+                <script src="styles/bootstrap4/popper.js"></script>
+                <script src="styles/bootstrap4/bootstrap.min.js"></script>
+                <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+                <script src="plugins/easing/easing.js"></script>
+                <script src="plugins/parallax-js-master/parallax.min.js"></script>
+                <script src="js/custom.js"></script>
+                <script src="js/headerFooterManager.js"></script>
+
+                <script>
+                    !(function (n, i, e, a) {
+                        ; (n.navigation = function (t, s) {
+                            var o = {
+                                responsive: !0,
+                                mobileBreakpoint: 991,
+                                showDuration: 200,
+                                hideDuration: 200,
+                                showDelayDuration: 0,
+                                hideDelayDuration: 0,
+                                submenuTrigger: "hover",
+                                effect: "fadeIn",
+                                submenuIndicator: !0,
+                                submenuIndicatorTrigger: !1,
+                                hideSubWhenGoOut: !0,
+                                visibleSubmenusOnMobile: !1,
+                                fixed: !1,
+                                overlay: !0,
+                                overlayColor: "rgba(0, 0, 0, 0.5)",
+                                hidden: !1,
+                                hiddenOnMobile: !1,
+                                offCanvasSide: "left",
+                                offCanvasCloseButton: !0,
+                                animationOnShow: "",
+                                animationOnHide: "",
+                                onInit: function () { },
+                                onLandscape: function () { },
+                                onPortrait: function () { },
+                                onShowOffCanvas: function () { },
+                                onHideOffCanvas: function () { }
+                            },
+                                r = this,
+                                u = Number.MAX_VALUE,
+                                d = 1,
+                                l = "click.nav touchstart.nav",
+                                f = "mouseenter focusin",
+                                c = "mouseleave focusout"
+                            r.settings = {}
+                            var t = (n(t), t)
+                            n(t).find(".nav-search").length > 0 &&
+                                n(t)
+                                    .find(".nav-search")
+                                    .find("form")
+                                    .prepend(
+                                        "<span class='nav-search-close-button' tabindex='0'>&#10005;</span>"
+                                    ),
+                                (r.init = function () {
+                                    ; (r.settings = n.extend({}, o, s)),
+                                        r.settings.offCanvasCloseButton &&
+                                        n(t)
+                                            .find(".nav-menus-wrapper")
+                                            .prepend(
+                                                "<span class='nav-menus-wrapper-close-button'>&#10005;</span>"
+                                            ),
+                                        "right" == r.settings.offCanvasSide &&
+                                        n(t)
+                                            .find(".nav-menus-wrapper")
+                                            .addClass("nav-menus-wrapper-right"),
+                                        r.settings.hidden &&
+                                        (n(t).addClass("navigation-hidden"),
+                                            (r.settings.mobileBreakpoint = 99999)),
+                                        v(),
+                                        r.settings.fixed && n(t).addClass("navigation-fixed"),
+                                        n(t)
+                                            .find(".nav-toggle")
+                                            .on("click touchstart", function (n) {
+                                                n.stopPropagation(),
+                                                    n.preventDefault(),
+                                                    r.showOffcanvas(),
+                                                    s !== a && r.callback("onShowOffCanvas")
+                                            }),
+                                        n(t)
+                                            .find(".nav-menus-wrapper-close-button")
+                                            .on("click touchstart", function () {
+                                                r.hideOffcanvas(), s !== a && r.callback("onHideOffCanvas")
+                                            }),
+                                        n(t)
+                                            .find(".nav-search-button, .nav-search-close-button")
+                                            .on("click touchstart keydown", function (i) {
+                                                i.stopPropagation(), i.preventDefault()
+                                                var e = i.keyCode || i.which
+                                                "click" === i.type ||
+                                                    "touchstart" === i.type ||
+                                                    ("keydown" === i.type && 13 == e)
+                                                    ? r.toggleSearch()
+                                                    : 9 == e && n(i.target).blur()
+                                            }),
+                                        n(t).find(".megamenu-tabs").length > 0 && y(),
+                                        n(i).resize(function () {
+                                            r.initNavigationMode(C()), O(), r.settings.hiddenOnMobile && m()
+                                        }),
+                                        r.initNavigationMode(C()),
+                                        r.settings.hiddenOnMobile && m(),
+                                        s !== a && r.callback("onInit")
+                                })
+                            var h = function () {
+                                n(t)
+                                    .find(".nav-submenu")
+                                    .hide(0),
+                                    n(t)
+                                        .find("li")
+                                        .removeClass("focus")
+                            },
+                                v = function () {
+                                    n(t)
+                                        .find("li")
+                                        .each(function () {
+                                            n(this).children(".nav-dropdown,.megamenu-panel").length > 0 &&
+                                                (n(this)
+                                                    .children(".nav-dropdown,.megamenu-panel")
+                                                    .addClass("nav-submenu"),
+                                                    r.settings.submenuIndicator &&
+                                                    n(this)
+                                                        .children("a")
+                                                        .append(
+                                                            "<span class='submenu-indicator'><span class='submenu-indicator-chevron'></span></span>"
+                                                        ))
+                                        })
+                                },
+                                m = function () {
+                                    n(t).hasClass("navigation-portrait")
+                                        ? n(t).addClass("navigation-hidden")
+                                        : n(t).removeClass("navigation-hidden")
+                                }
+                                ; (r.showSubmenu = function (i, e) {
+                                    C() > r.settings.mobileBreakpoint &&
+                                        n(t)
+                                            .find(".nav-search")
+                                            .find("form")
+                                            .fadeOut(),
+                                        "fade" == e
+                                            ? n(i)
+                                                .children(".nav-submenu")
+                                                .stop(!0, !0)
+                                                .delay(r.settings.showDelayDuration)
+                                                .fadeIn(r.settings.showDuration)
+                                                .removeClass(r.settings.animationOnHide)
+                                                .addClass(r.settings.animationOnShow)
+                                            : n(i)
+                                                .children(".nav-submenu")
+                                                .stop(!0, !0)
+                                                .delay(r.settings.showDelayDuration)
+                                                .slideDown(r.settings.showDuration)
+                                                .removeClass(r.settings.animationOnHide)
+                                                .addClass(r.settings.animationOnShow),
+                                        n(i).addClass("focus")
+                                }),
+                                    (r.hideSubmenu = function (i, e) {
+                                        "fade" == e
+                                            ? n(i)
+                                                .find(".nav-submenu")
+                                                .stop(!0, !0)
+                                                .delay(r.settings.hideDelayDuration)
+                                                .fadeOut(r.settings.hideDuration)
+                                                .removeClass(r.settings.animationOnShow)
+                                                .addClass(r.settings.animationOnHide)
+                                            : n(i)
+                                                .find(".nav-submenu")
+                                                .stop(!0, !0)
+                                                .delay(r.settings.hideDelayDuration)
+                                                .slideUp(r.settings.hideDuration)
+                                                .removeClass(r.settings.animationOnShow)
+                                                .addClass(r.settings.animationOnHide),
+                                            n(i)
+                                                .removeClass("focus")
+                                                .find(".focus")
+                                                .removeClass("focus")
+                                    })
+                            var p = function () {
+                                n("body").addClass("no-scroll"),
+                                    r.settings.overlay &&
+                                    (n(t).append("<div class='nav-overlay-panel'></div>"),
+                                        n(t)
+                                            .find(".nav-overlay-panel")
+                                            .css("background-color", r.settings.overlayColor)
+                                            .fadeIn(300)
+                                            .on("click touchstart", function (n) {
+                                                r.hideOffcanvas()
+                                            }))
+                            },
+                                g = function () {
+                                    n("body").removeClass("no-scroll"),
+                                        r.settings.overlay &&
+                                        n(t)
+                                            .find(".nav-overlay-panel")
+                                            .fadeOut(400, function () {
+                                                n(this).remove()
+                                            })
+                                }
+                                ; (r.showOffcanvas = function () {
+                                    p(),
+                                        "left" == r.settings.offCanvasSide
+                                            ? n(t)
+                                                .find(".nav-menus-wrapper")
+                                                .css("transition-property", "left")
+                                                .addClass("nav-menus-wrapper-open")
+                                            : n(t)
+                                                .find(".nav-menus-wrapper")
+                                                .css("transition-property", "right")
+                                                .addClass("nav-menus-wrapper-open")
+                                }),
+                                    (r.hideOffcanvas = function () {
+                                        n(t)
+                                            .find(".nav-menus-wrapper")
+                                            .removeClass("nav-menus-wrapper-open")
+                                            .on(
+                                                "webkitTransitionEnd moztransitionend transitionend oTransitionEnd",
+                                                function () {
+                                                    n(t)
+                                                        .find(".nav-menus-wrapper")
+                                                        .css("transition-property", "none")
+                                                        .off()
+                                                }
+                                            ),
+                                            g()
+                                    }),
+                                    (r.toggleOffcanvas = function () {
+                                        C() <= r.settings.mobileBreakpoint &&
+                                            (n(t)
+                                                .find(".nav-menus-wrapper")
+                                                .hasClass("nav-menus-wrapper-open")
+                                                ? (r.hideOffcanvas(), s !== a && r.callback("onHideOffCanvas"))
+                                                : (r.showOffcanvas(), s !== a && r.callback("onShowOffCanvas")))
+                                    }),
+                                    (r.toggleSearch = function () {
+                                        "none" ==
+                                            n(t)
+                                                .find(".nav-search")
+                                                .find("form")
+                                                .css("display")
+                                            ? (n(t)
+                                                .find(".nav-search")
+                                                .find("form")
+                                                .fadeIn(200),
+                                                n(t)
+                                                    .find(".nav-search")
+                                                    .find("input")
+                                                    .focus())
+                                            : (n(t)
+                                                .find(".nav-search")
+                                                .find("form")
+                                                .fadeOut(200),
+                                                n(t)
+                                                    .find(".nav-search")
+                                                    .find("input")
+                                                    .blur())
+                                    }),
+                                    (r.initNavigationMode = function (i) {
+                                        r.settings.responsive
+                                            ? (i <= r.settings.mobileBreakpoint &&
+                                                u > r.settings.mobileBreakpoint &&
+                                                (n(t)
+                                                    .addClass("navigation-portrait")
+                                                    .removeClass("navigation-landscape"),
+                                                    S(),
+                                                    s !== a && r.callback("onPortrait")),
+                                                i > r.settings.mobileBreakpoint &&
+                                                d <= r.settings.mobileBreakpoint &&
+                                                (n(t)
+                                                    .addClass("navigation-landscape")
+                                                    .removeClass("navigation-portrait"),
+                                                    k(),
+                                                    g(),
+                                                    r.hideOffcanvas(),
+                                                    s !== a && r.callback("onLandscape")),
+                                                (u = i),
+                                                (d = i))
+                                            : (n(t).addClass("navigation-landscape"),
+                                                k(),
+                                                s !== a && r.callback("onLandscape"))
+                                    })
+                            var b = function () {
+                                n("html").on("click.body touchstart.body", function (i) {
+                                    0 === n(i.target).closest(".navigation").length &&
+                                        (n(t)
+                                            .find(".nav-submenu")
+                                            .fadeOut(),
+                                            n(t)
+                                                .find(".focus")
+                                                .removeClass("focus"),
+                                            n(t)
+                                                .find(".nav-search")
+                                                .find("form")
+                                                .fadeOut())
+                                })
+                            },
+                                C = function () {
+                                    return (
+                                        i.innerWidth || e.documentElement.clientWidth || e.body.clientWidth
+                                    )
+                                },
+                                w = function () {
+                                    n(t)
+                                        .find(".nav-menu")
+                                        .find("li, a")
+                                        .off(l)
+                                        .off(f)
+                                        .off(c)
+                                },
+                                O = function () {
+                                    if (C() > r.settings.mobileBreakpoint) {
+                                        var i = n(t).outerWidth(!0)
+                                        n(t)
+                                            .find(".nav-menu")
+                                            .children("li")
+                                            .children(".nav-submenu")
+                                            .each(function () {
+                                                n(this)
+                                                    .parent()
+                                                    .position().left +
+                                                    n(this).outerWidth() >
+                                                    i
+                                                    ? n(this).css("right", 0)
+                                                    : n(this).css("right", "auto")
+                                            })
+                                    }
+                                },
+                                y = function () {
+                                    function i(i) {
+                                        var e = n(i)
+                                            .children(".megamenu-tabs-nav")
+                                            .children("li"),
+                                            a = n(i).children(".megamenu-tabs-pane")
+                                        n(e).on("click.tabs touchstart.tabs", function (i) {
+                                            i.stopPropagation(),
+                                                i.preventDefault(),
+                                                n(e).removeClass("active"),
+                                                n(this).addClass("active"),
+                                                n(a)
+                                                    .hide(0)
+                                                    .removeClass("active"),
+                                                n(a[n(this).index()])
+                                                    .show(0)
+                                                    .addClass("active")
+                                        })
+                                    }
+                                    if (n(t).find(".megamenu-tabs").length > 0)
+                                        for (var e = n(t).find(".megamenu-tabs"), a = 0; a < e.length; a++)
+                                            i(e[a])
+                                },
+                                k = function () {
+                                    w(),
+                                        h(),
+                                        navigator.userAgent.match(/Mobi/i) ||
+                                            navigator.maxTouchPoints > 0 ||
+                                            "click" == r.settings.submenuTrigger
+                                            ? n(t)
+                                                .find(".nav-menu, .nav-dropdown")
+                                                .children("li")
+                                                .children("a")
+                                                .on(l, function (e) {
+                                                    if (
+                                                        (r.hideSubmenu(
+                                                            n(this)
+                                                                .parent("li")
+                                                                .siblings("li"),
+                                                            r.settings.effect
+                                                        ),
+                                                            n(this)
+                                                                .closest(".nav-menu")
+                                                                .siblings(".nav-menu")
+                                                                .find(".nav-submenu")
+                                                                .fadeOut(r.settings.hideDuration),
+                                                            n(this).siblings(".nav-submenu").length > 0)
+                                                    ) {
+                                                        if (
+                                                            (e.stopPropagation(),
+                                                                e.preventDefault(),
+                                                                "none" ==
+                                                                n(this)
+                                                                    .siblings(".nav-submenu")
+                                                                    .css("display"))
+                                                        )
+                                                            return (
+                                                                r.showSubmenu(
+                                                                    n(this).parent("li"),
+                                                                    r.settings.effect
+                                                                ),
+                                                                O(),
+                                                                !1
+                                                            )
+                                                        if (
+                                                            (r.hideSubmenu(n(this).parent("li"), r.settings.effect),
+                                                                "_blank" === n(this).attr("target") ||
+                                                                "blank" === n(this).attr("target"))
+                                                        )
+                                                            i.open(n(this).attr("href"))
+                                                        else {
+                                                            if (
+                                                                "#" === n(this).attr("href") ||
+                                                                "" === n(this).attr("href") ||
+                                                                "javascript:void(0)" === n(this).attr("href")
+                                                            )
+                                                                return !1
+                                                            i.location.href = n(this).attr("href")
+                                                        }
+                                                    }
+                                                })
+                                            : n(t)
+                                                .find(".nav-menu")
+                                                .find("li")
+                                                .on(f, function () {
+                                                    r.showSubmenu(this, r.settings.effect), O()
+                                                })
+                                                .on(c, function () {
+                                                    r.hideSubmenu(this, r.settings.effect)
+                                                }),
+                                        r.settings.hideSubWhenGoOut && b()
+                                },
+                                S = function () {
+                                    w(),
+                                        h(),
+                                        r.settings.visibleSubmenusOnMobile
+                                            ? n(t)
+                                                .find(".nav-submenu")
+                                                .show(0)
+                                            : (n(t)
+                                                .find(".submenu-indicator")
+                                                .removeClass("submenu-indicator-up"),
+                                                r.settings.submenuIndicator &&
+                                                    r.settings.submenuIndicatorTrigger
+                                                    ? n(t)
+                                                        .find(".submenu-indicator")
+                                                        .on(l, function (i) {
+                                                            return (
+                                                                i.stopPropagation(),
+                                                                i.preventDefault(),
+                                                                r.hideSubmenu(
+                                                                    n(this)
+                                                                        .parent("a")
+                                                                        .parent("li")
+                                                                        .siblings("li"),
+                                                                    "slide"
+                                                                ),
+                                                                r.hideSubmenu(
+                                                                    n(this)
+                                                                        .closest(".nav-menu")
+                                                                        .siblings(".nav-menu")
+                                                                        .children("li"),
+                                                                    "slide"
+                                                                ),
+                                                                "none" ==
+                                                                    n(this)
+                                                                        .parent("a")
+                                                                        .siblings(".nav-submenu")
+                                                                        .css("display")
+                                                                    ? (n(this).addClass("submenu-indicator-up"),
+                                                                        n(this)
+                                                                            .parent("a")
+                                                                            .parent("li")
+                                                                            .siblings("li")
+                                                                            .find(".submenu-indicator")
+                                                                            .removeClass("submenu-indicator-up"),
+                                                                        n(this)
+                                                                            .closest(".nav-menu")
+                                                                            .siblings(".nav-menu")
+                                                                            .find(".submenu-indicator")
+                                                                            .removeClass("submenu-indicator-up"),
+                                                                        r.showSubmenu(
+                                                                            n(this)
+                                                                                .parent("a")
+                                                                                .parent("li"),
+                                                                            "slide"
+                                                                        ),
+                                                                        !1)
+                                                                    : (n(this)
+                                                                        .parent("a")
+                                                                        .parent("li")
+                                                                        .find(".submenu-indicator")
+                                                                        .removeClass("submenu-indicator-up"),
+                                                                        void r.hideSubmenu(
+                                                                            n(this)
+                                                                                .parent("a")
+                                                                                .parent("li"),
+                                                                            "slide"
+                                                                        ))
+                                                            )
+                                                        })
+                                                    : n(t)
+                                                        .find(".nav-menu, .nav-dropdown")
+                                                        .children("li")
+                                                        .children("a")
+                                                        .on(l, function (e) {
+                                                            if (
+                                                                (e.stopPropagation(),
+                                                                    e.preventDefault(),
+                                                                    r.hideSubmenu(
+                                                                        n(this)
+                                                                            .parent("li")
+                                                                            .siblings("li"),
+                                                                        r.settings.effect
+                                                                    ),
+                                                                    r.hideSubmenu(
+                                                                        n(this)
+                                                                            .closest(".nav-menu")
+                                                                            .siblings(".nav-menu")
+                                                                            .children("li"),
+                                                                        "slide"
+                                                                    ),
+                                                                    "none" ==
+                                                                    n(this)
+                                                                        .siblings(".nav-submenu")
+                                                                        .css("display"))
+                                                            )
+                                                                return (
+                                                                    n(this)
+                                                                        .children(".submenu-indicator")
+                                                                        .addClass("submenu-indicator-up"),
+                                                                    n(this)
+                                                                        .parent("li")
+                                                                        .siblings("li")
+                                                                        .find(".submenu-indicator")
+                                                                        .removeClass("submenu-indicator-up"),
+                                                                    n(this)
+                                                                        .closest(".nav-menu")
+                                                                        .siblings(".nav-menu")
+                                                                        .find(".submenu-indicator")
+                                                                        .removeClass("submenu-indicator-up"),
+                                                                    r.showSubmenu(n(this).parent("li"), "slide"),
+                                                                    !1
+                                                                )
+                                                            if (
+                                                                (n(this)
+                                                                    .parent("li")
+                                                                    .find(".submenu-indicator")
+                                                                    .removeClass("submenu-indicator-up"),
+                                                                    r.hideSubmenu(n(this).parent("li"), "slide"),
+                                                                    "_blank" === n(this).attr("target") ||
+                                                                    "blank" === n(this).attr("target"))
+                                                            )
+                                                                i.open(n(this).attr("href"))
+                                                            else {
+                                                                if (
+                                                                    "#" === n(this).attr("href") ||
+                                                                    "" === n(this).attr("href") ||
+                                                                    "javascript:void(0)" === n(this).attr("href")
+                                                                )
+                                                                    return !1
+                                                                i.location.href = n(this).attr("href")
+                                                            }
+                                                        }))
+                                }
+                                ; (r.callback = function (n) {
+                                    s[n] !== a && s[n].call(t)
+                                }),
+                                    r.init()
+                        }),
+                            (n.fn.navigation = function (i) {
+                                return this.each(function () {
+                                    if (a === n(this).data("navigation")) {
+                                        var e = new n.navigation(this, i)
+                                        n(this).data("navigation", e)
+                                    }
+                                })
+                            })
+                    })(jQuery, window, document)
+
+                        ; (function ($) {
+                            "use strict"
+
+                            var $window = $(window)
+
+                            if ($.fn.navigation) {
+                                $("#navigation1").navigation()
+                                $("#always-hidden-nav").navigation({
+                                    hidden: true
+                                })
+                            }
+
+                            $window.on("load", function () {
+                                $("#preloader").fadeOut("slow", function () {
+                                    $(this).remove()
+                                })
+                            })
+                        })(jQuery)
+                </script>
+
+
+</body>
+</html>
