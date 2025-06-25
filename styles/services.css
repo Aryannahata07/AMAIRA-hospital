@@ -290,7 +290,7 @@ section
 	font-weight: 570;
 	justify-content: flex-start;
 }
-.section_content li{
+.section_content {
 
 	margin-top: 10px;
 	font-size: 18px;
@@ -907,6 +907,8 @@ Card
 .card h3 {
     margin-top: 0;
 	padding-bottom: 7px;
+	text-align: left; /* or center, if you prefer */
+    text-justify: none;
 }
 
 .card p {
@@ -926,6 +928,20 @@ Card
 .card:hover p {
     max-height: 200px; /* Allow full content to be visible */
     overflow-y: auto;
+}
+
+.subtopic .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.subtopic .image img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /*********************************
