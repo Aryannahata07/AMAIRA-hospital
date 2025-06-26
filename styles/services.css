@@ -944,6 +944,39 @@ Card
     border-radius: 10px;
 }
 
+
+.sidebyside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.sidebyside .text-content {
+    flex: 1 1 60%;
+    min-width: 300px;
+}
+
+.sidebyside .image {
+    flex: 1 1 35%;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebyside .image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    object-fit: contain;
+}
+
+
 /*********************************
 9. CTA
 *********************************/
