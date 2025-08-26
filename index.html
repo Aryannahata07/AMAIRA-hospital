@@ -1055,24 +1055,27 @@
 
         <div class="home">
             <div class="home_slider_container">
-                <!-- Home Slider -->
-                <div class="owl-carousel owl-theme home_slider">
-
-                    <!-- Slider Item -->
-                    <div class="owl-item">
-                        <div class="home_slider_background" style="background-image:url(images/home_background_3.jpg)"></div>
-                        <div class="home_content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="home_content_inner">
-                                            <div class="home_title"><h1>AMAIRA Urology and Fertility Care</h1></div>
-                                            <div class="home_text">
-                                                <p>Amaira Urology and Fertility Care took its inception in the year 2020 in the heart of the city at Majuragate. We began with an outpatient set up which has expanded to a 15 bedded hospital now with state of art facilities. It has a Fully equipped OT with a C-Arm, laser and premium endoscopy unit.</p>
-                                            </div>
-                                            <div class="button home_button" style="background-color: #EF5A6F">
-                                                <a href="about.html">read more</a>
-                                            </div>
+    <!-- Home Slider (Static Background) -->
+                    <div id="home_slider" class="home_slider_background"></div>
+                    
+                    <div class="home_content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="home_content_inner">
+                                        <div class="home_title">
+                                            <h1>AMAIRA Urology and Fertility Care</h1>
+                                        </div>
+                                        <div class="home_text">
+                                            <p>
+                                                Amaira Urology and Fertility Care took its inception in the year 2020 in the heart 
+                                                of the city at Majuragate. We began with an outpatient set up which has expanded 
+                                                to a 15 bedded hospital now with state of art facilities. It has a Fully equipped 
+                                                OT with a C-Arm, laser and premium endoscopy unit.
+                                            </p>
+                                        </div>
+                                        <div class="button home_button" style="background-color: #EF5A6F">
+                                            <a href="about.html">read more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1080,6 +1083,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Slider Progress -->
 
@@ -2012,6 +2016,41 @@
                                 })
                             })
                         })(jQuery)
+
+                        const images = [
+    "Logo.png",
+    "Yash-Vaidya.png",
+    "Nisha-Vaidya.png",
+];
+
+let currentIndex = 0;
+const slider = document.getElementById("home_slider");
+
+// Function to update background + class
+function updateBackground() {
+    const currentImage = images[currentIndex];
+    slider.style.backgroundImage = `url(${currentImage})`;
+
+    // Reset class
+    slider.className = "home_slider_background";
+
+    // Apply conditional classes
+    if (currentImage.includes("Logo")) {
+        slider.classList.add("logo");
+    } else {
+        slider.classList.add("doctor");
+    }
+}
+
+// Set initial background
+updateBackground();
+
+// Change background every 5 seconds
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateBackground();
+}, 5000);
+
                 </script>
 
 

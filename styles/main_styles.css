@@ -607,7 +607,7 @@ section
 .home
 {
 	width: 100%;
-	height: 900px;
+	height: 850px;
 }
 .home_slider_container
 {
@@ -616,14 +616,26 @@ section
 }
 .home_slider_background
 {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	flex: 1;
+	top: 20%;
+	height: 80%; 
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+	background-size: contain;      /* show full image */
+	background-position: right center; /* stick image to right side */
+	transition: background-image 1s ease-in-out; /* smooth fade */
+	overflow: hidden;
+}
+.home_slider_background.logo {
+    background-size: 300px auto; /* shrink logo */
+	right:15%;
+	top: 10%;
+    background-position: right; /* keep it at right center */
+}
+.home_slider_background.doctor {
+    background-size: contain;
+	right: 5%;
+    background-position: top right; /* align to top */
+    max-height: 85vh;               /* crop before footer boxes */
 }
 .home_slider_progress
 {
@@ -639,7 +651,7 @@ section
 .home_content
 {
 	position: absolute;
-	top: 28%;
+	top: 32%;
 	left: 0;
 	width: 100%;
 }
@@ -683,10 +695,6 @@ section
 	background: transparent;
 	z-index: 10;
 	padding-bottom: 35px;
-}
-.box_col
-{
-	margin-top: -59px;
 }
 .box
 {
