@@ -626,7 +626,7 @@ section
 	overflow: hidden;
 }
 .home_slider_background.logo {
-    background-size: 300px auto; /* shrink logo */
+    background-size: 300px auto; 
 	right:15%;
 	top: 10%;
     background-position: right; /* keep it at right center */
@@ -634,8 +634,8 @@ section
 .home_slider_background.doctor {
     background-size: contain;
 	right: 5%;
-    background-position: top right; /* align to top */
-    max-height: 85vh;               /* crop before footer boxes */
+    background-position: top right;
+    max-height: 85vh;              
 }
 .home_slider_progress
 {
