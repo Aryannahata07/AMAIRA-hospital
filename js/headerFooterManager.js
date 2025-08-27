@@ -449,7 +449,7 @@ class SpecialFooter extends HTMLElement {
                                 </div>
                                 <ul class="footer_about_list">
                                     <li><div class="footer_about_icon" style="background-color: #EF5A6F"><img src="images/phone-call.svg" alt=""></div><span>+91 82008 50936</span></li>
-                                    <li><div class="footer_about_icon" style="background-color: #EF5A6F"><img src="images/envelope.svg" alt=""></div><span>info@amairaurofertilitycaresurat.com</span></li>
+                                    <li><div class="footer_about_icon" style="background-color: #EF5A6F"><img src="images/envelope.svg" alt=""></div><span>amairaurologyandfertilitycare@gmail.com</span></li>
                                     <li><div class="footer_about_icon" style="background-color: #EF5A6F"><img src="images/placeholder.svg" alt=""></div><span>201, Accron Trade Centre, Besides New SIDS Hospital, Civil Char Rasta, Majura Gate, Surat.</span></li>
                                 </ul>
                             </div>
@@ -460,8 +460,11 @@ class SpecialFooter extends HTMLElement {
                             <div class="footer_links footer_column">
                                 <div class="footer_title">Useful Links</div>
                                 <ul>
-                                    <li><a href="Dr. Yash Vaidya.html">Dr. Yash Vaidya</a></li>
-                                    <li><a href="Dr. Nisha Vaidya.html">Dr. Nisha Vaidya</a></li>
+                                    <li><a href="about.html#yashvaidya">Dr. Yash Vaidya</a></li>
+                                    <li><a href="about.html#nishavaidya">Dr. Nisha Vaidya</a></li>
+                                    <li><a href="Urology.html">Urology</a></li>
+                                    <li><a href="Infertility.html">Infertility Services</a></li>
+                                    <li><a href="Obstetrics-&-Gynecology-Services.html">Other Obstetrics & Gynecology</a></li>
                                     <li><a href="Surgery.html#Ureteric-Stones">Ureteric Stones</a></li>
                                     <li><a href="Surgery.html#Blader-Stones">Blader Stones</a></li>
                                     <li><a href="Surgery.html#Antegrade-PCNL">Antegrade PCNL</a></li>
@@ -470,7 +473,6 @@ class SpecialFooter extends HTMLElement {
                                     <li><a href="Surgery.html#Mini-PCNL">Mini PCNL</a></li>
                                     <li><a href="Surgery.html#Ultra-Mini-PCNL">Ultra Mini PCNL</a></li>
                                     <li><a href="Surgery.html#RIRS">RIRS</a></li>
-                                    <li><a href="Urinary-Kidney-Stone-Treatment.html">Urinary / Kidney Stone Treatment</a></li>
                                     <li><a href="Laser-Treatment-for-Kidney-Stones.html">Laser Treatment for Kidney Stones</a></li>
                                 </ul>
                             </div>
