@@ -118,41 +118,50 @@ class SpecialHeader extends HTMLElement {
 {
 	color: #EF5A6F;
 }
+/* Default (desktop) styles */
 .logo_content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-	gap: 20px;
+    gap: 20px;
 }
-
 
 .logo_image {
-    max-width: 100px; /* Adjust the size to fit the box */
+    max-width: 100px;
     height: auto;
-    margin-bottom: 10px; /* Add space between the logo and the text */
-}
-
-.logo_line {
-    text-align: center;
-	
-
 }
 
 .logo_text {
-    font-size: 30px; /* Adjust font size as needed */
-    
-	color: #003687;
+    font-size: 30px;
+    color: #003687;
 }
 
-.logo_sub
-{
-	font-size: 16px;
-	font-weight: 400;
-	color: #8f8e8e;
-	padding-left: 3px;
-	
+.logo_sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8f8e8e;
+    padding-left: 3px;
 }
+
+@media (max-width: 768px) {
+    .logo_content {
+        gap: 10px; /* reduce spacing */
+    }
+
+    .logo_image {
+        max-width: 60px; /* smaller logo */
+    }
+
+    .logo_text {
+        font-size: 20px; /* scale down */
+    }
+
+    .logo_sub {
+        font-size: 12px; /* scale down */
+    }
+}
+
 
 .menu_container
 {
