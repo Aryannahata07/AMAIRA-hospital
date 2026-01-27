@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,8 @@
     <link rel="stylesheet" type="text/css" href="styles/about.css">
     <link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
 
@@ -38,7 +40,6 @@
 
 
     <style>
-
         .navigation {
             width: 100%;
             height: 70px;
@@ -48,10 +49,10 @@
             background-color: #fff;
         }
 
-            .navigation * {
-                box-sizing: border-box;
-                -webkit-tap-highlight-color: transparent;
-            }
+        .navigation * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
 
         .navigation-portrait {
             height: 48px;
@@ -91,28 +92,28 @@
             text-decoration: none !important;
         }
 
-            .nav-brand:hover,
-            .nav-brand:focus {
-                color: #343a40;
-            }
+        .nav-brand:hover,
+        .nav-brand:focus {
+            color: #343a40;
+        }
 
         .navigation-portrait .nav-brand {
             font-size: 18px;
             line-height: 48px;
         }
 
-        .nav-logo > img {
+        .nav-logo>img {
             height: 48px;
             margin: 11px auto;
             padding: 0 15px;
             float: left;
         }
 
-        .nav-logo:focus > img {
+        .nav-logo:focus>img {
             outline: initial;
         }
 
-        .navigation-portrait .nav-logo > img {
+        .navigation-portrait .nav-logo>img {
             height: 36px;
             margin: 6px auto 6px 15px;
             padding: 0;
@@ -130,15 +131,15 @@
             cursor: pointer;
         }
 
-            .nav-toggle:before {
-                content: "";
-                position: absolute;
-                width: 24px;
-                height: 2px;
-                background-color: #343a40;
-                border-radius: 10px;
-                box-shadow: 0 0.5em 0 0 #343a40, 0 1em 0 0 #343a40;
-            }
+        .nav-toggle:before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: #343a40;
+            border-radius: 10px;
+            box-shadow: 0 0.5em 0 0 #343a40, 0 1em 0 0 #343a40;
+        }
 
         .navigation-portrait .nav-toggle {
             display: block;
@@ -158,20 +159,19 @@
             transition-timing-function: ease;
         }
 
-            .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right {
-                left: auto;
-                right: -400px;
-            }
+        .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right {
+            left: auto;
+            right: -400px;
+        }
 
-            .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-open {
-                left: 0;
-            }
+        .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-open {
+            left: 0;
+        }
 
-            .navigation-portrait
-            .nav-menus-wrapper.nav-menus-wrapper-right.nav-menus-wrapper-open {
-                left: auto;
-                right: 0;
-            }
+        .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right.nav-menus-wrapper-open {
+            left: auto;
+            right: 0;
+        }
 
         .nav-menus-wrapper-close-button {
             width: 30px;
@@ -205,31 +205,31 @@
             text-align: center;
         }
 
-            .navigation-landscape .nav-menu.nav-menu-centered > li {
-                float: none;
-            }
+        .navigation-landscape .nav-menu.nav-menu-centered>li {
+            float: none;
+        }
 
-        .nav-menu > li {
+        .nav-menu>li {
             display: inline-block;
             float: left;
             text-align: left;
         }
 
-        .navigation-portrait .nav-menu > li {
+        .navigation-portrait .nav-menu>li {
             width: 100%;
             position: relative;
             border-top: solid 1px #f0f0f0;
         }
 
-            .navigation-portrait .nav-menu > li:last-child {
-                border-bottom: solid 1px #f0f0f0;
-            }
+        .navigation-portrait .nav-menu>li:last-child {
+            border-bottom: solid 1px #f0f0f0;
+        }
 
-        .nav-menu + .nav-menu > li:first-child {
+        .nav-menu+.nav-menu>li:first-child {
             border-top: none;
         }
 
-        .nav-menu > li > a {
+        .nav-menu>li>a {
             height: 70px;
             padding: 26px 15px;
             display: inline-block;
@@ -239,27 +239,27 @@
             transition: color 0.3s, background 0.3s;
         }
 
-        .navigation-portrait .nav-menu > li > a {
+        .navigation-portrait .nav-menu>li>a {
             width: 100%;
             height: auto;
             padding: 12px 15px 12px 26px;
         }
 
-        .nav-menu > li:hover > a,
-        .nav-menu > li.active > a,
-        .nav-menu > li.focus > a {
+        .nav-menu>li:hover>a,
+        .nav-menu>li.active>a,
+        .nav-menu>li.focus>a {
             color: #ff6b00;
         }
 
-        .nav-menu > li > a > i,
-        .nav-menu > li > a > [class*="ion-"] {
+        .nav-menu>li>a>i,
+        .nav-menu>li>a>[class*="ion-"] {
             width: 18px;
             height: 16px;
             line-height: 16px;
             transform: scale(1.4);
         }
 
-        .nav-menu > li > a > [class*="ion-"] {
+        .nav-menu>li>a>[class*="ion-"] {
             width: 16px;
             display: inline-block;
             transform: scale(1.8);
@@ -270,25 +270,25 @@
             text-align: center;
         }
 
-        .nav-menu.nav-menu-social > li {
+        .nav-menu.nav-menu-social>li {
             text-align: center;
             float: none;
             border: none !important;
         }
 
-        .navigation-portrait .nav-menu.nav-menu-social > li {
+        .navigation-portrait .nav-menu.nav-menu-social>li {
             width: auto;
         }
 
-        .nav-menu.nav-menu-social > li > a > [class*="ion-"] {
+        .nav-menu.nav-menu-social>li>a>[class*="ion-"] {
             font-size: 12px;
         }
 
-        .nav-menu.nav-menu-social > li > a > .fa {
+        .nav-menu.nav-menu-social>li>a>.fa {
             font-size: 14px;
         }
 
-        .navigation-portrait .nav-menu.nav-menu-social > li > a {
+        .navigation-portrait .nav-menu.nav-menu-social>li>a {
             padding: 15px;
         }
 
@@ -327,9 +327,9 @@
             left: 24px;
         }
 
-        .nav-menu > li:hover > a .submenu-indicator-chevron,
-        .nav-menu > .active > a .submenu-indicator-chevron,
-        .nav-menu > .focus > a .submenu-indicator-chevron {
+        .nav-menu>li:hover>a .submenu-indicator-chevron,
+        .nav-menu>.active>a .submenu-indicator-chevron,
+        .nav-menu>.focus>a .submenu-indicator-chevron {
             border-color: transparent #967adc #967adc transparent;
         }
 
@@ -400,28 +400,28 @@
             transform: rotate(-45deg);
         }
 
-            .nav-search-icon:after,
-            .nav-search-icon:before {
-                content: "";
-                pointer-events: none;
-            }
+        .nav-search-icon:after,
+        .nav-search-icon:before {
+            content: "";
+            pointer-events: none;
+        }
 
-            .nav-search-icon:before {
-                width: 2px;
-                height: 11px;
-                top: 11px;
-                position: absolute;
-                left: 50%;
-                border-radius: 0 0 1px 1px;
-                box-shadow: inset 0 0 0 32px;
-                transform: translateX(-50%);
-            }
+        .nav-search-icon:before {
+            width: 2px;
+            height: 11px;
+            top: 11px;
+            position: absolute;
+            left: 50%;
+            border-radius: 0 0 1px 1px;
+            box-shadow: inset 0 0 0 32px;
+            transform: translateX(-50%);
+        }
 
         .nav-search-button:hover .nav-search-icon {
             color: #ff6b00;
         }
 
-        .nav-search > form {
+        .nav-search>form {
             width: 100%;
             height: 100%;
             padding: 0 auto;
@@ -497,11 +497,11 @@
             border-radius: 4px;
         }
 
-            .nav-button:hover,
-            .nav-button:focus {
-                color: #fff;
-                text-decoration: none;
-            }
+        .nav-button:hover,
+        .nav-button:focus {
+            color: #fff;
+            text-decoration: none;
+        }
 
         .navigation-portrait .nav-button {
             width: calc(100% - 52px);
@@ -520,9 +520,9 @@
             margin: 12px 26px 0;
         }
 
-            .navigation-portrait .nav-text + ul {
-                margin-top: 15px;
-            }
+        .navigation-portrait .nav-text+ul {
+            margin-top: 15px;
+        }
 
         .nav-dropdown {
             min-width: 180px;
@@ -545,11 +545,11 @@
             left: 100%;
         }
 
-        .nav-menu > li > .nav-dropdown {
+        .nav-menu>li>.nav-dropdown {
             border-top: solid 1px #f0f0f0;
         }
 
-        .nav-dropdown > li {
+        .nav-dropdown>li {
             width: 100%;
             float: left;
             clear: both;
@@ -557,53 +557,52 @@
             text-align: left;
         }
 
-            .nav-dropdown > li > a {
-                width: 100%;
-                padding: 16px 20px;
-                display: inline-block;
-                text-decoration: none;
-                float: left;
-                font-size: 13px;
-                color: #343a40;
-                background-color: #fdfdfd;
-            }
+        .nav-dropdown>li>a {
+            width: 100%;
+            padding: 16px 20px;
+            display: inline-block;
+            text-decoration: none;
+            float: left;
+            font-size: 13px;
+            color: #343a40;
+            background-color: #fdfdfd;
+        }
 
-            .nav-dropdown > li:hover > a,
-            .nav-dropdown > li.focus > a {
-                color: #ff6b00;
-            }
+        .nav-dropdown>li:hover>a,
+        .nav-dropdown>li.focus>a {
+            color: #ff6b00;
+        }
 
         .nav-dropdown.nav-dropdown-left {
             right: 0;
         }
 
-        .nav-dropdown > li > .nav-dropdown-left {
+        .nav-dropdown>li>.nav-dropdown-left {
             left: auto;
             right: 100%;
         }
 
-        .navigation-landscape .nav-dropdown.nav-dropdown-left > li > a {
+        .navigation-landscape .nav-dropdown.nav-dropdown-left>li>a {
             text-align: right;
         }
 
-        .navigation-portrait .nav-dropdown > li > a {
+        .navigation-portrait .nav-dropdown>li>a {
             padding: 12px 20px 12px 30px;
         }
 
-        .navigation-portrait .nav-dropdown > li > ul > li > a {
+        .navigation-portrait .nav-dropdown>li>ul>li>a {
             padding-left: 50px;
         }
 
-        .navigation-portrait .nav-dropdown > li > ul > li > ul > li > a {
+        .navigation-portrait .nav-dropdown>li>ul>li>ul>li>a {
             padding-left: 70px;
         }
 
-        .navigation-portrait .nav-dropdown > li > ul > li > ul > li > ul > li > a {
+        .navigation-portrait .nav-dropdown>li>ul>li>ul>li>ul>li>a {
             padding-left: 90px;
         }
 
-        .navigation-portrait
-        .nav-dropdown > li > ul > li > ul > li > ul > li > ul > li > a {
+        .navigation-portrait .nav-dropdown>li>ul>li>ul>li>ul>li>ul>li>a {
             padding-left: 110px;
         }
 
@@ -622,15 +621,12 @@
             transform: rotate(-45deg);
         }
 
-        .navigation-portrait
-        .nav-dropdown
-        .submenu-indicator
-        .submenu-indicator-chevron {
+        .navigation-portrait .nav-dropdown .submenu-indicator .submenu-indicator-chevron {
             transform: rotate(45deg);
         }
 
-        .nav-dropdown > li:hover > a .submenu-indicator-chevron,
-        .nav-dropdown > .focus > a .submenu-indicator-chevron {
+        .nav-dropdown>li:hover>a .submenu-indicator-chevron,
+        .nav-dropdown>.focus>a .submenu-indicator-chevron {
             border-color: transparent #ff6b00 #ff6b00 transparent;
         }
 
@@ -638,12 +634,9 @@
             left: 10px;
         }
 
-            .navigation-landscape
-            .nav-dropdown.nav-dropdown-left
-            .submenu-indicator
-            .submenu-indicator-chevron {
-                transform: rotate(135deg);
-            }
+        .navigation-landscape .nav-dropdown.nav-dropdown-left .submenu-indicator .submenu-indicator-chevron {
+            transform: rotate(135deg);
+        }
 
         .nav-dropdown-horizontal {
             width: 100%;
@@ -652,27 +645,27 @@
             border-top: solid 1px #f0f0f0;
         }
 
-            .nav-dropdown-horizontal .nav-dropdown-horizontal {
-                width: 100%;
-                top: 100%;
-                left: 0;
-            }
+        .nav-dropdown-horizontal .nav-dropdown-horizontal {
+            width: 100%;
+            top: 100%;
+            left: 0;
+        }
 
         .navigation-portrait .nav-dropdown-horizontal .nav-dropdown-horizontal {
             border-top: none;
         }
 
-        .nav-dropdown-horizontal > li {
+        .nav-dropdown-horizontal>li {
             width: auto;
             clear: none;
             position: static;
         }
 
-        .navigation-portrait .nav-dropdown-horizontal > li {
+        .navigation-portrait .nav-dropdown-horizontal>li {
             width: 100%;
         }
 
-        .nav-dropdown-horizontal > li > a {
+        .nav-dropdown-horizontal>li>a {
             position: relative;
         }
 
@@ -689,11 +682,9 @@
             transform: rotate(0deg);
         }
 
-            .navigation-portrait
-            .nav-dropdown-horizontal
-            .submenu-indicator.submenu-indicator-up {
-                transform: rotate(-180deg);
-            }
+        .navigation-portrait .nav-dropdown-horizontal .submenu-indicator.submenu-indicator-up {
+            transform: rotate(-180deg);
+        }
 
         .megamenu-panel {
             width: 100%;
@@ -719,9 +710,9 @@
             width: 100%;
         }
 
-            .megamenu-panel [class*="container"] [class*="col-"] {
-                padding: 0;
-            }
+        .megamenu-panel [class*="container"] [class*="col-"] {
+            padding: 0;
+        }
 
         .megamenu-panel-half {
             width: 50%;
@@ -740,27 +731,27 @@
             width: 100%;
         }
 
-            .megamenu-panel-row:before,
-            .megamenu-panel-row:after {
-                content: "";
-                display: table;
-                line-height: 0;
-            }
+        .megamenu-panel-row:before,
+        .megamenu-panel-row:after {
+            content: "";
+            display: table;
+            line-height: 0;
+        }
 
-            .megamenu-panel-row:after {
-                clear: both;
-            }
+        .megamenu-panel-row:after {
+            clear: both;
+        }
 
-            .megamenu-panel-row [class*="col-"] {
-                display: block;
-                min-height: 20px;
-                float: left;
-                margin-left: 3%;
-            }
+        .megamenu-panel-row [class*="col-"] {
+            display: block;
+            min-height: 20px;
+            float: left;
+            margin-left: 3%;
+        }
 
-                .megamenu-panel-row [class*="col-"]:first-child {
-                    margin-left: 0;
-                }
+        .megamenu-panel-row [class*="col-"]:first-child {
+            margin-left: 0;
+        }
 
         .navigation-portrait .megamenu-panel-row [class*="col-"] {
             float: none;
@@ -770,9 +761,7 @@
             margin-top: 15px;
         }
 
-        .navigation-portrait
-        .megamenu-panel-row:first-child
-        [class*="col-"]:first-child {
+        .navigation-portrait .megamenu-panel-row:first-child [class*="col-"]:first-child {
             margin-top: 0;
         }
 
@@ -842,7 +831,7 @@
             width: 100%;
         }
 
-        .megamenu-tabs-nav > li > a {
+        .megamenu-tabs-nav>li>a {
             width: 100%;
             padding: 10px 16px;
             float: left;
@@ -854,8 +843,8 @@
             background-color: #fff;
         }
 
-        .megamenu-tabs-nav > li.active a,
-        .megamenu-tabs-nav > li:hover a {
+        .megamenu-tabs-nav>li.active a,
+        .megamenu-tabs-nav>li:hover a {
             background-color: #f5f5f5;
         }
 
@@ -871,9 +860,9 @@
             background-color: #fff;
         }
 
-            .megamenu-tabs-pane.active {
-                display: block;
-            }
+        .megamenu-tabs-pane.active {
+            display: block;
+        }
 
         .navigation-portrait .megamenu-tabs-pane {
             width: 100%;
@@ -893,10 +882,10 @@
             list-style: none;
         }
 
-            .megamenu-list:last-child {
-                margin: 0;
-                border: none;
-            }
+        .megamenu-list:last-child {
+            margin: 0;
+            border: none;
+        }
 
         .navigation-landscape .megamenu-list {
             margin: -15px 0;
@@ -904,11 +893,11 @@
             border-right: solid 1px #f0f0f0;
         }
 
-            .navigation-landscape .megamenu-list:last-child {
-                border: none;
-            }
+        .navigation-landscape .megamenu-list:last-child {
+            border: none;
+        }
 
-        .megamenu-list > li > a {
+        .megamenu-list>li>a {
             width: 100%;
             padding: 10px 15px;
             display: inline-block;
@@ -917,21 +906,21 @@
             font-size: 13px;
         }
 
-            .megamenu-list > li > a:hover {
-                background-color: #ff6b00;
-                color: #fff;
-            }
+        .megamenu-list>li>a:hover {
+            background-color: #ff6b00;
+            color: #fff;
+        }
 
-        .megamenu-list > li.megamenu-list-title > a {
+        .megamenu-list>li.megamenu-list-title>a {
             font-size: 12px;
             font-weight: 600;
             text-transform: uppercase;
             color: #343a40;
         }
 
-            .megamenu-list > li.megamenu-list-title > a:hover {
-                background-color: transparent;
-            }
+        .megamenu-list>li.megamenu-list-title>a:hover {
+            background-color: transparent;
+        }
 
         .navigation-landscape .list-col-2 {
             width: 50%;
@@ -949,21 +938,21 @@
             width: 20%;
         }
 
-        .nav-menu > li > a {
+        .nav-menu>li>a {
             color: #343a40;
             text-transform: uppercase;
         }
 
-        .nav-dropdown > li > a {
+        .nav-dropdown>li>a {
             color: #343a40;
             padding: 10px 20px;
             border-bottom: 1px solid #f6f6f6;
         }
 
-            .nav-dropdown > li > a:hover,
-            .nav-dropdown > li > a:focus {
-                color: #ff6b00;
-            }
+        .nav-dropdown>li>a:hover,
+        .nav-dropdown>li>a:focus {
+            color: #ff6b00;
+        }
 
         .main_header_area.sticky {
             width: 100%;
@@ -983,15 +972,16 @@
             z-index: 99;
         }
 
-        .navigation-portrait .nav-menu > li > a {
+        .navigation-portrait .nav-menu>li>a {
             width: 100%;
             height: auto;
             padding: 10px 10px 10px 30px;
         }
 
         @media only screen and (min-width: 320px) and (max-width: 767px) {
-            .nav-dropdown > li > a,
-            .megamenu-list > li > a {
+
+            .nav-dropdown>li>a,
+            .megamenu-list>li>a {
                 width: 65%;
             }
         }
@@ -1002,314 +992,425 @@
 
 
 <body>
-    
+
     <header class="header">
         <special-header></special-header>
     </header>
 
-    
-        <!-- Menu -->
+
+    <!-- Menu -->
 
 
-        <div class="home">
-            <div class="home_slider_background" style="background-image:url(images/about2.jpg)"></div>
-           <div class="home_container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="home_content">
-                                <div class="home_title">About <span>AMAIRA</span></div>
-                                <div class="breadcrumbs">
-                                    <ul>
-                                        <li>About</li>
-                                        <li>Amaira Urology and Fertility Care</li>
-                                    </ul>
-                                </div>
+    <div class="home">
+        <div class="home_slider_background" style="background-image:url(images/about2.jpg)"></div>
+        <div class="home_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="home_content">
+                            <div class="home_title">About <span>AMAIRA</span></div>
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li>About</li>
+                                    <li>Amaira Urology and Fertility Care</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- About -->
+    <!-- About -->
 
-        <div class="about">
-            <div class="container">
-                <div class="row">
+    <div class="about">
+        <div class="container">
+            <div class="row">
 
-                    <!-- About Content -->
-                    <div class="col-lg-8">
-                        <div class="section_title"><h2>AMAIRA Urology and Fertility Care</h2></div>
-                        <div class="about_text">
-                            <p>Amaira Urology and Fertility Care took its inception in the year 2020 in the heart of the city at Majuragate. We began with an outpatient set up which has expanded to a 15 bedded hospital now with state of art facilities. It has a Fully equipped OT with a C-Arm, laser and premium endoscopy unit.</p>
-                            <p>Under the gynecology armentarium, there is a facility of Male and Female Fertility Evaluation, Sonography, Follicular monitoring and Ovulation studies, IUI (Intrauterine insemination) and IVF (In vitro fertilization) procedures. The centre is equipped to carry obstetric procedures as well and provision for normal delivery and cesarean section. There is the best facility for fertility-enhancing minimally invasive surgeries ( hysteroscopy and Laparoscopy).</p>
-                            <p>Both Doctors, Dr. Yash Vaidya & Dr. Nisha Vaidya are young, dynamic and qualified to serve best to their patients.</p>
-
-                            
-                        </div>
+                <!-- About Content -->
+                <div class="col-lg-8">
+                    <div class="section_title">
+                        <h2>AMAIRA Urology and Fertility Care</h2>
                     </div>
+                    <div class="about_text">
+                        <p>Amaira Urology and Fertility Care took its inception in the year 2020 in the heart of the
+                            city at Majuragate. We began with an outpatient set up which has expanded to a 15 bedded
+                            hospital now with state of art facilities. Hospital has entry level NABH
+                            accreditation. It has a Fully equipped OT with a C-Arm, laser and premium endoscopy
+                            unit.</p>
+                        <p>Under the gynecology armentarium, there is a facility of Male and Female Fertility
+                            Evaluation, Sonography, Follicular monitoring and Ovulation studies, IUI (Intrauterine
+                            insemination) and IVF (In vitro fertilization) procedures. The centre is equipped to carry
+                            obstetric procedures as well and provision for normal delivery and cesarean section. There
+                            is the best facility for fertility-enhancing minimally invasive surgeries ( hysteroscopy and
+                            Laparoscopy).</p>
+                        <p>Both Doctors, Dr. Yash Vaidya & Dr. Nisha Vaidya are young, dynamic and qualified to serve
+                            best to their patients.</p>
+                    </div>
+                </div>
 
-                    <!-- Boxes -->
-                    <div class="col-lg-4 boxes_col">
+                <!-- Boxes -->
+                <div class="col-lg-4">
+                    <div class="boxes_container" style="display: flex; flex-direction: column;">
 
                         <!-- Box -->
-                        <div class="box working_hours">
-                            <div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width:29px; height:29px;"><img src="images/alarm-clock.svg" alt=""></div></div>
-                            <div class="box_title">Working Hours (Mon-Sat)</div>
+                        <div class="box working_hours"
+                            style="background-color: #536493; border-radius: 20px; overflow: hidden; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); transition: 300ms ease; height: auto; min-height: 287px; padding: 42px 30px;">
+                            <div class="box_icon"
+                                style="width:29px; height:29px; filter: brightness(0) invert(1); margin-bottom: 20px;">
+                                <img src="images/alarm-clock.svg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="box_title"
+                                style="font-size: 20px; font-weight: 500; color: #FFFFFF; margin-bottom: 25px;">Working
+                                Hours (Mon-Sat)</div>
                             <div class="working_hours_list">
-                                <ul>
-                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="d-flex flex-row align-items-center justify-content-start"
+                                        style="color: #fff; margin-bottom: 15px; font-size: 14px;">
                                         <div>Morning</div>
                                         <div class="ml-auto">10.00 am – 1.00 pm</div>
                                     </li>
-                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                    <li class="d-flex flex-row align-items-center justify-content-start"
+                                        style="color: #fff; margin-bottom: 15px; font-size: 14px;">
                                         <div>Evening</div>
                                         <div class="ml-auto">5.00 pm – 7.00 pm</div>
                                     </li>
-                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                    <li class="d-flex flex-row align-items-center justify-content-start"
+                                        style="color: #fff; margin-bottom: 15px; font-size: 14px;">
                                         <div>Sunday</div>
                                         <div class="ml-auto">On Call Bases</div>
                                     </li>
                                 </ul>
                             </div>
+                            <div
+                                style="position: absolute; left: 0; bottom: 0; width: 100%; height: 5px; background: #EF5A6F;">
+                            </div>
                         </div>
 
                         <!-- Box -->
-                        <div class="box box_emergency">
-                            <div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 37px; height:37px; margin-left:-4px;"><img src="images/bell.svg" alt=""></div></div>
-                            <div class="box_title">Emergency Number</div>
-                            <div class="box_phone">+91 82008 50936</div>
-                            <div class="box_emergency_text">In Emergency Cases, Please contact above number.</div>
+                        <div class="box box_emergency"
+                            style="background-color: #536493; border-radius: 20px; overflow: hidden; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); transition: 300ms ease; height: auto; min-height: 287px; padding: 42px 30px;">
+                            <div class="box_icon"
+                                style="width: 37px; height:37px; filter: brightness(0) invert(1); margin-bottom: 20px;">
+                                <img src="images/bell.svg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="box_title"
+                                style="font-size: 20px; font-weight: 500; color: #FFFFFF; margin-bottom: 15px;">
+                                Emergency Number</div>
+                            <div class="box_phone" style="color: whitesmoke; font-size: 30px; margin-bottom: 15px;">
+                                <b>+91 82008 50936</b>
+                            </div>
+                            <div class="box_emergency_text" style="color: #fff; font-size: 14px; line-height: 1.6;">In
+                                Emergency Cases, Please call on this number.</div>
+                            <div
+                                style="position: absolute; left: 0; bottom: 0; width: 100%; height: 5px; background: #EF5A6F;">
+                            </div>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-
-<!-- About -->
-<section id="yashvaidya">
-<div class="about">
-    <div class="container">
-        <div class="row">
-
-            <!-- About Content -->
-            <div class="col-lg-8">
-                <div class="section_title"><h2>ABOUT DR. YASH VAIDYA</h2></div>
-                <div class="about_text">
-                    <p><b>Dr. Yash Vaidya </b> <br /> <small>MBBS, M.S., M.Ch.(Urology), Consultant Urologist Andrologist and Advance Laparoscopic Surgeon.</small> </p>
-                    <p>Dr. Yash Vaidya, M.Ch. (Urology), M.S. General Surgery, MBBS (BJMC). After finishing his M.Ch. in the field of Urology from the prestigious BJ Medical College, Ahmedabad in the year 2016, Dr. Yash started his practice in his hometown Surat. He has 10+ years of expertise in the field of Urology, Andrology, and advanced laparoscopic surgery. He has also acquired specialized training in advanced robotic surgeries, further enhancing his precision and surgical outcomes.</p>
-                    <p>His key surgeries involve Endourology-PCNL,URS,PUCL,SPCL,TURP,TURBT,VIU. He has also been specialised in andrology and has treated many male infertility patients ranging from low sperm count to absolutely zero sperm count and his skilled in procedures like TESA, PESA.</p>
-                    <p>He has extensive training in advanced laproscopic urology surgeries that involve Simple Nephrectomy,radical nephrectomy, pyeloplasty and uretrolithotomy. </p>
-                    <p><b>Dr. Yash also has expertise in cases related to Uro Oncology, Pediatric and Reconstructive Urology.</b></p>
-                </div>
-            </div>
-
-            <!-- Boxes -->
-            <div class="col-lg-4">
-                <img src="Yash-Vaidya.png" alt="Dr. Yash">
-            </div>
-        </div>
     </div>
-</div>
 
-<!-- Testimonials -->
-
-<div class="testimonials">
-    <div class="testimonials_background parallax-window" data-parallax="scroll" data-image-src="images/testimonials.jpg" data-speed="0.8"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="section_title section_title_light"><h2>Patient Testimonials</h2></div>
-            </div>
-        </div>
-
-        <div class="row test_row">
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">I admit in this hospital for my kidney stones operation..operation done very well..I have no feel any pain during operation or after operation..and staff was very helpful..all persons are so humble and caring..i just love service ❤️</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Vaishnavi Jariwala</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">I really like the service. Dr Yash vaidya is a great doctor! Very understanding and polite in Nature. And all staff's services is good thank you doctor and his team very fabulas.</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Nausad rayan Asiyana Nagaer</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row test_row">
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">It's is the best urology hospital in a good price and a service is too good you can go it's a worth it...</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                         <div class="test_author_name"><a href="#">Pramod Tambakhe</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">Dr.yash vaidya is a great doctor!he is very understanding and polite in nature.he takes time with the patient to help them their issues!i highly recommended him to anyone looking for a specialist in urologist...n staff is also very supportive n hard working thank you so much for your support.......amaira urology hospital...</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                         <div class="test_author_name"><a href="#">deepak bhatia</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row test_row">
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">
-                        We have liked this hospital very much. Dr sir himself has encouraged us.and the all staff here are also very much 👍👍👍👍
-                    </div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Jalaram Cabin</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">Dr.yash vaidya is a great doctor!he is very understanding and listens to your concerns.he takes time with the patient to help them their issues!i highly recommended him to anyone looking for a specialist...n team thank you so much.......amaira urology hospital...</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Pradeep Garg</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row test_row">
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">Dr yash vaidya is a Great doctor! he's very understanding and listento your concerns.he takes time with the patient to help them with their health issue.i highly recommend him to anyone looking for a specialist..thank you all staff...</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">satish Parmar</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">Good service and support staff also good dr Yash vaidya Amaira urology and fertility care hospital Thanks sir</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Ajit Patil</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row test_row">
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">  I got good treatment  Doctor yash vaidya is great Staff mambers are also very helpful
-                    </div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Aditya Patel</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">Wonderful experience with Amaira urology and fertility care hospital.Dr.yash Vaidya was wonderful surgeon and the staff was always helpful and kind .thank you..👍</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Viresh Sonar</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row test_row">
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">Dr. Yash Vaidya is excellent. The staff is also very supportive. The treatment was good and supported us all along the way.</div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Arsh Kania</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial -->
-            <div class="col-lg-6 test_col">
-                <div class="testimonial">
-                    <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                    <div class="test_text">
-                        My self ushman moosa patel
-                        It's very good  experience
-                        Dr Yash vaidya is the best urologist
-                        And very nice, friendly  by nature best staff.
-                    </div>
-                    <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                        <div class="test_author_name"><a href="#">Usman Bhaya</a>, <span>Patient</span></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-    </div>
-</div>
-</section>
-
-
-        <!-- About -->
-        <section id="nishavaidya">
+    <!-- About -->
+    <section id="yashvaidya">
         <div class="about">
             <div class="container">
                 <div class="row">
 
                     <!-- About Content -->
                     <div class="col-lg-8">
-                        <div class="section_title"><h2>ABOUT DR. NISHA VAIDYA</h2></div>
+                        <div class="section_title">
+                            <h2>ABOUT DR. YASH VAIDYA</h2>
+                        </div>
                         <div class="about_text">
-                            <p><b>Dr. Nisha Vaidya </b> <br /> <small>FNB Reproductive Medicine, Ms(OBG), MBBS.</small> </p>
-                            <p>After achieving her post graduate degree in obstetrics and gynaecology, she went ahead to pursue super specialization in the field of reproductive medicine from the India's best fertility institute, Milann the fertility centre, Bangalore under Dr. Kamini A Rao and is a diplomat of National board. </p>
-                            <p>She has 8+ years of expertise in field of reproductive endocrinology and ART as a specialist. She is one of the best and trusted female gynecologist in Surat. Reproductive medicine is a subspecialty that treats hormonal problems in both men and women including subfertility.  </p>
-                            <p>It uses assisted reproductive technologies like in vitro Fertilization (IVF), Intrauterine Insemination (IUI), Intracytoplasmic sperm injection (ICSI), egg donation and a variety of reproductive tract surgeries like laparoscopy and hysteroscopy. </p>
-                            <p><b>Dr. Nisha Vaidya is the first and only national board certified reproductive medicine specialist in entire South Gujarat.</b></p>
-                            <p>She has special in terests in management of unexplainedinfertility, PCOS, Endometriosis, Poor Ovarian Reserve and Recurrent implantation failure. </p>
+                            <p><b>Dr. Yash Vaidya <br /> MBBS, M.S., M.Ch.(Urology), Consultant Urologist Andrologist
+                                    and Advance Laparoscopic Surgeon. </b></p>
+                            <p>Dr. Yash Vaidya, M.Ch. (Urology), M.S. General Surgery, MBBS (BJMC). After finishing his
+                                M.Ch. in the field of Urology from the prestigious BJ Medical College, Ahmedabad in the
+                                year 2016, Dr. Yash started his practice in his hometown Surat. He has 10+ years of
+                                expertise in the field of Urology, Andrology, and advanced laparoscopic surgery. He has
+                                also acquired specialized training in advanced robotic surgeries, further enhancing his
+                                precision and surgical outcomes.</p>
+                            <p>His key surgeries involve Endourology-PCNL,URS,PUCL,SPCL,TURP,TURBT,VIU. He has also been
+                                specialised in andrology and has treated many male infertility patients ranging from low
+                                sperm count to absolutely zero sperm count and his skilled in procedures like TESA,
+                                PESA.</p>
+                            <p>He has extensive training in advanced laproscopic urology surgeries that involve Simple
+                                Nephrectomy,radical nephrectomy, pyeloplasty and uretrolithotomy. </p>
+                            <p><b>Dr. Yash also has expertise in cases related to Uro Oncology, Pediatric and
+                                    Reconstructive Urology.</b></p>
+                        </div>
+                    </div>
+
+                    <!-- Boxes -->
+                    <div class="col-lg-4">
+                        <img src="Yash-Vaidya.png" alt="Dr. Yash">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+
+        <div class="testimonials">
+            <div class="testimonials_background parallax-window" data-parallax="scroll"
+                data-image-src="images/testimonials.jpg" data-speed="0.8"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonials_title_container">
+                            <div class="section_title section_title_light">
+                                <h2>What Our Patients Say</h2>
+                            </div>
+                            <span class="testimonials_subtitle">REAL STORIES OF CARE, COMPASSION, AND EXCEPTIONAL
+                                OUTCOMES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row test_row">
+
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">VJ</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Vaishnavi Jariwala <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">I admit in this hospital for my kidney stones operation..operation
+                                done very well..I have no feel any pain during operation or after operation..and staff
+                                was very helpful..all persons are so humble and caring..i just love service ❤️</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">NR</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Nausad rayan Asiyana Nagaer <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">I really like the service. Dr Yash vaidya is a great doctor! Very
+                                understanding and polite in Nature. And all staff's services is good thank you doctor
+                                and his team very fabulas.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row test_row">
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">PT</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Pramod Tambakhe <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">It's is the best urology hospital in a good price and a service is
+                                too good you can go it's a worth it...</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">DB</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">deepak bhatia <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">Dr.yash vaidya is a great doctor!he is very understanding and polite
+                                in nature.he takes time with the patient to help them their issues!i highly recommended
+                                him to anyone looking for a specialist in urologist...n staff is also very supportive n
+                                hard working thank you so much for your support.......amaira urology hospital...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row test_row">
+
+                    <!-- Testimonial 5 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">JC</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Jalaram Cabin <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">We have liked this hospital very much. Dr sir himself has encouraged
+                                us.and the all staff here are also very much 👍👍👍👍</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">PG</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Pradeep Garg <i class="fa fa-check-circle test_verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_text">Dr.yash vaidya is a great doctor!he is very understanding and listens
+                                to your concerns.he takes time with the patient to help them their issues!i highly
+                                recommended him to anyone looking for a specialist...n team thank you so
+                                much.......amaira urology hospital...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row test_row">
+
+                    <!-- Testimonial 7 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">SP</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">satish Parmar <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">Dr yash vaidya is a Great doctor! he's very understanding and
+                                listento your concerns.he takes time with the patient to help them with their health
+                                issue.i highly recommend him to anyone looking for a specialist..thank you all staff...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 8 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">AP</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Ajit Patil <i class="fa fa-check-circle test_verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_text">Good service and support staff also good dr Yash vaidya Amaira
+                                urology and fertility care hospital Thanks sir</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row test_row">
+
+                    <!-- Testimonial 9 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">AP</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Aditya Patel <i class="fa fa-check-circle test_verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_text">I got good treatment Doctor yash vaidya is great Staff mambers are
+                                also very helpful</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 10 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">VS</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Viresh Sonar <i class="fa fa-check-circle test_verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_text">Wonderful experience with Amaira urology and fertility care
+                                hospital.Dr.yash Vaidya was wonderful surgeon and the staff was always helpful and kind
+                                .thank you..👍</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row test_row">
+
+                    <!-- Testimonial 11 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">AK</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Arsh Kania <i class="fa fa-check-circle test_verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_text">Dr. Yash Vaidya is excellent. The staff is also very supportive. The
+                                treatment was good and supported us all along the way.</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 12 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">UB</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Usman Bhaya <i class="fa fa-check-circle test_verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_text">My self ushman moosa patel. It's very good experience. Dr Yash vaidya
+                                is the best urologist. And very nice, friendly by nature best staff.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="nishavaidya">
+        <div class="about">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About Content -->
+                    <div class="col-lg-8">
+                        <div class="section_title">
+                            <h2>ABOUT DR. NISHA VAIDYA</h2>
+                        </div>
+                        <div class="about_text">
+                            <p><b>Dr. Nisha Vaidya <br />FNB Reproductive Medicine, Ms(OBG), MBBS.</b></p>
+                            <p>After achieving her post graduate degree in obstetrics and gynaecology, she went ahead to
+                                pursue super specialization in the field of reproductive medicine from the India's best
+                                fertility institute, Milann the fertility centre, Bangalore under Dr. Kamini A Rao and
+                                is a diplomat of National board. </p>
+                            <p>She has 8+ years of expertise in field of reproductive endocrinology and ART as a
+                                specialist. She is one of the best and trusted female gynecologist in Surat.
+                                Reproductive medicine is a subspecialty that treats hormonal problems in both men and
+                                women including subfertility. It uses assisted reproductive technologies like in vitro
+                                Fertilization (IVF), Intrauterine Insemination (IUI), Intracytoplasmic sperm injection
+                                (ICSI), egg donation
+                                and a variety of reproductive tract surgeries like laparoscopy and hysteroscopy. </p>
+                            <p><b>Dr. Nisha Vaidya is the first and only national board certified reproductive medicine
+                                    specialist in entire South Gujarat.</b></p>
+                            <p>She has special interests in management of unexplained infertility, PCOS, Endometriosis,
+                                Poor Ovarian Reserve, Recurrent implantation failure, Fertility Preservation and Onco
+                                fertility.
+                            </p>
                         </div>
                     </div>
 
@@ -1324,172 +1425,220 @@
         <!-- Testimonials -->
 
         <div class="testimonials">
-            <div class="testimonials_background parallax-window" data-parallax="scroll" data-image-src="images/testimonials.jpg" data-speed="0.8"></div>
+            <div class="testimonials_background parallax-window" data-parallax="scroll"
+                data-image-src="images/testimonials.jpg" data-speed="0.8"></div>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="section_title section_title_light"><h2>Patient Testimonials</h2></div>
-                    </div>
-                </div>
-
-                <div class="row test_row">
-
-                    <!-- Testimonial -->
-                    <div class="col-lg-6 test_col">
-                        <div class="testimonial">
-                            <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                            <div class="test_text">I am thankful to have Dr nisha as my gynae throughout the pregnancy and delivery process. She was able to guide us well on our every concern which kept us confident through the entire journey. Still remember her polite and clear instructions during active labor, which helped me sail through the process. Thank you for given best treatment Dr Nisha vaidya.</div>
-                            <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                                <div class="test_author_name"><a href="#">zankhana prajapati</a>, <span>Patient</span></div>
+                        <div class="testimonials_title_container">
+                            <div class="section_title section_title_light">
+                                <h2>What Our Patients Say</h2>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial -->
-                    <div class="col-lg-6 test_col">
-                        <div class="testimonial">
-                            <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                            <div class="test_text">Kindly staff, great service,  All over excellent experience.........😊</div>
-                            <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                                <div class="test_author_name"><a href="#">varshajgohil parmar</a>, <span>Patient</span></div>
-                            </div>
+                            <span class="testimonials_subtitle">HEALING JOURNEYS AND FERTILITY SUCCESS STORIES</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="row test_row">
 
-                    <!-- Testimonial -->
+                    <!-- Testimonial 1 -->
                     <div class="col-lg-6 test_col">
                         <div class="testimonial">
-                            <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                            <div class="test_text">A hospital environment is helpfull for patients.... The staff give a great service and kindly.... It's a great experience in AMAIRA UROLOGY AND FERTILITY CARE..... Thank you so much....</div>
-                            <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                                <div class="test_author_name"><a href="#">Devashi Bokhiriya</a>, <span>Patient</span></div>
+                            <div class="test_header">
+                                <div class="test_avatar">ZP</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">zankhana prajapati <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
                             </div>
+                            <div class="test_text">I am thankful to have Dr nisha as my gynae throughout the pregnancy
+                                and delivery process. She was able to guide us well on our every concern which kept us
+                                confident through the entire journey. Still remember her polite and clear instructions
+                                during active labor, which helped me sail through the process. Thank you for given best
+                                treatment Dr Nisha vaidya.</div>
                         </div>
                     </div>
 
-                    <!-- Testimonial -->
+                    <!-- Testimonial 2 -->
                     <div class="col-lg-6 test_col">
                         <div class="testimonial">
-                            <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                            <div class="test_text">Kindly staff, great service, awesome environment.... All over excellent experience......</div>
-                            <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                                <div class="test_author_name"><a href="#">Kalpesh Vasava</a>, <span>Patient</span></div>
+                            <div class="test_header">
+                                <div class="test_avatar">VP</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">varshajgohil parmar <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">Kindly staff, great service, All over excellent experience.........😊
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="row test_row">
 
-                    <!-- Testimonial -->
+                    <!-- Testimonial 3 -->
                     <div class="col-lg-6 test_col">
                         <div class="testimonial">
-                            <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
-                            <div class="test_text">Very good staff excellent set of doctors thanks for taking such excellent care god bless</div>
-                            <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                                <div class="test_author_name"><a href="#">Imran Momla</a>, <span>Patient</span></div>
+                            <div class="test_header">
+                                <div class="test_avatar">DB</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Devashi Bokhiriya <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
                             </div>
+                            <div class="test_text">A hospital environment is helpfull for patients.... The staff give a
+                                great service and kindly.... It's a great experience in AMAIRA UROLOGY AND FERTILITY
+                                CARE..... Thank you so much....</div>
                         </div>
                     </div>
 
-                    <!-- Testimonial -->
+                    <!-- Testimonial 4 -->
                     <div class="col-lg-6 test_col">
                         <div class="testimonial">
-                            <div class="test_icon d-flex flex-column align-items-center justify-content-center"><img src="images/quote.png" alt=""></div>
+                            <div class="test_header">
+                                <div class="test_avatar">KV</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Kalpesh Vasava <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
+                            <div class="test_text">Kindly staff, great service, awesome environment.... All over
+                                excellent experience......</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row test_row">
+
+                    <!-- Testimonial 5 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">IM</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Imran Momla <i class="fa fa-check-circle test_verified"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_text">Very good staff excellent set of doctors thanks for taking such
+                                excellent care god bless</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="col-lg-6 test_col">
+                        <div class="testimonial">
+                            <div class="test_header">
+                                <div class="test_avatar">PY</div>
+                                <div class="test_name_container">
+                                    <div class="test_name">Priyanka Yadav <i
+                                            class="fa fa-check-circle test_verified"></i></div>
+                                </div>
+                            </div>
                             <div class="test_text">Nice hospital n good service...</div>
-                            <div class="test_author d-flex flex-row align-items-center justify-content-start">
-                                <div class="test_author_name"><a href="#">2106562.Priyanka Yadav</a>, <span>Patient</span></div>
-                            </div>
                         </div>
                     </div>
-                </div>              
+                </div>
             </div>
         </div>
     </section>
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <footer class="footer">
-            <div class="footer_container">
-                <div class="container">
-                    <div class="row">
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="container">
+                <div class="row">
 
-                        <!-- Footer - About -->
-                        <div class="col-lg-4 footer_col">
-                            <div class="footer_about">
-                                <div class="footer_logo_container">
-                                    <a href="#" class="d-flex flex-column align-items-center justify-content-center">
-                                        <div class="footer_logo_content">
-                                            <div class="footer_logo d-flex flex-row align-items-center justify-content-center ">
-                                                    <img src="./AMIRA_LOGO-removebg-preview.png" alt="amira logo" class="logo_image" >
-                                                    <div class="logo_line">
-                                                        <div class="footer_logo_text"><b>AMAIRA</b></div>
-                                                    
-                                                    <div class="logo_sub"><b>Urology & Fertility Care</b></div>
-                                                </div>
+                    <!-- Footer - About -->
+                    <div class="col-lg-4 footer_col">
+                        <div class="footer_about">
+                            <div class="footer_logo_container">
+                                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                                    <div class="footer_logo_content">
+                                        <div
+                                            class="footer_logo d-flex flex-row align-items-center justify-content-center ">
+                                            <img src="./AMIRA_LOGO-removebg-preview.png" alt="amira logo"
+                                                class="logo_image">
+                                            <div class="logo_line">
+                                                <div class="footer_logo_text"><b>AMAIRA</b></div>
+
+                                                <div class="logo_sub"><b>Urology & Fertility Care</b></div>
                                             </div>
-                                            </div>
-                                    </a>
-                                </div>
-                                <div class="footer_about_text">
-                                    <p>Amaira Urology and Fertility Care took its inception in the year 2020 in the heart of the city at Majuragate. It has a Fully equipped OT with a C-Arm, laser and premium endoscopy unit.</p>
-                                </div>
-                                <ul class="footer_about_list">
-                                    <li><div class="footer_about_icon"><img src="images/phone-call.svg" alt=""></div><span>+91 82008 50936</span></li>
-                                    <li><div class="footer_about_icon"><img src="images/envelope.svg" alt=""></div><span>info@amairaurofertilitycaresurat.com</span></li>
-                                    <li><div class="footer_about_icon"><img src="images/placeholder.svg" alt=""></div><span>201, Accron Trade Centre, Besides New SIDS Hospital, Civil Char Rasta, Majura Gate, Surat.</span></li>
-                                </ul>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
+                            <div class="footer_about_text">
+                                <p>Amaira Urology and Fertility Care took its inception in the year 2020 in the heart of
+                                    the city at Majuragate. It is an entry level NABH accredited hospital. It has a
+                                    Fully equipped OT with a C-Arm, laser and premium endoscopy unit.</p>
+                            </div>
+                            <ul class="footer_about_list">
+                                <li>
+                                    <div class="footer_about_icon"><img src="images/phone-call.svg" alt=""></div>
+                                    <span>+91 82008 50936</span>
+                                </li>
+                                <li>
+                                    <div class="footer_about_icon"><img src="images/envelope.svg" alt=""></div>
+                                    <span>info@amairaurofertilitycaresurat.com</span>
+                                </li>
+                                <li>
+                                    <div class="footer_about_icon"><img src="images/placeholder.svg" alt=""></div>
+                                    <span>201, Accron Trade Centre, Besides New SIDS Hospital, Civil Char Rasta, Majura
+                                        Gate, Surat.</span>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <!-- Footer - Links -->
-                        <div class="col-lg-4 footer_col">
-                            <div class="footer_links footer_column">
-                                <div class="footer_title">Useful Links</div>
-                                <ul>
-                                    <li><a href="Dr. Yash Vaidya.html">Dr. Yash Vaidya</a></li>
-                                    <li><a href="Dr. Nisha Vaidya.html">Dr. Nisha Vaidya</a></li>
-                                    <li><a href="Surgery.html#Ureteric-Stones">Ureteric Stones</a></li>
-                                    <li><a href="Surgery.html#Blader-Stones">Blader Stones</a></li>
-                                    <li><a href="Surgery.html#Antegrade-PCNL">Antegrade PCNL</a></li>
-                                    <li><a href="Surgery.html#ESWL">ESWL</a></li>
-                                    <li><a href="Surgery.html#PCNL">PCNL</a></li>
-                                    <li><a href="Surgery.html#Mini-PCNL">Mini PCNL</a></li>
-                                    <li><a href="Surgery.html#Ultra-Mini-PCNL">Ultra Mini PCNL</a></li>
-                                    <li><a href="Surgery.html#RIRS">RIRS</a></li>
-                                    <li><a href="Urinary-Kidney-Stone-Treatment.html">Urinary / Kidney Stone Treatment</a></li>
-                                    <li><a href="Laser-Treatment-for-Kidney-Stones.html">Laser Treatment for Kidney Stones</a></li>
-                                </ul>
-                            </div>
+                    <!-- Footer - Links -->
+                    <div class="col-lg-4 footer_col">
+                        <div class="footer_links footer_column">
+                            <div class="footer_title">Useful Links</div>
+                            <ul>
+                                <li><a href="Dr. Yash Vaidya.html">Dr. Yash Vaidya</a></li>
+                                <li><a href="Dr. Nisha Vaidya.html">Dr. Nisha Vaidya</a></li>
+                                <li><a href="Surgery.html#Ureteric-Stones">Ureteric Stones</a></li>
+                                <li><a href="Surgery.html#Blader-Stones">Blader Stones</a></li>
+                                <li><a href="Surgery.html#Antegrade-PCNL">Antegrade PCNL</a></li>
+                                <li><a href="Surgery.html#ESWL">ESWL</a></li>
+                                <li><a href="Surgery.html#PCNL">PCNL</a></li>
+                                <li><a href="Surgery.html#Mini-PCNL">Mini PCNL</a></li>
+                                <li><a href="Surgery.html#Ultra-Mini-PCNL">Ultra Mini PCNL</a></li>
+                                <li><a href="Surgery.html#RIRS">RIRS</a></li>
+                                <li><a href="Urinary-Kidney-Stone-Treatment.html">Urinary / Kidney Stone Treatment</a>
+                                </li>
+                                <li><a href="Laser-Treatment-for-Kidney-Stones.html">Laser Treatment for Kidney
+                                        Stones</a></li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <!-- Footer - News -->
-                        <div class="col-lg-4 footer_col">
-                            <div class="footer_links footer_column">
-                                <div class="footer_title">Useful Links</div>
-                                <ul>
-                                    <li><a href="Uro-Oncology.html">Uro-Oncology</a></li>
-                                    <li><a href="Urethral-Stricture.html">Urethral Stricture</a></li>
-                                    <li><a href="Urinary-Cancer-Treatment.html">Urinary Cancer Treatment</a></li>
-                                    <li><a href="Urethral-Stricture.html">Urethral Stricture</a></li>
-                                    <li><a href="Male-Infertility.html">Male Infertility</a></li>
-                                    <li><a href="Prostate-Cancer.html">Prostate Cancer</a></li>
-                                    <li><a href="Prostate-Surgery.html">Prostate Surgery</a></li>
-                                    <li><a href="Erectile-Dysfunction.html">Erectile Dysfunction</a></li>
-                                    <li><a href="Female-Urinary-Incontinence.html">Female Urinary Incontinence</a></li>
-                                    <li><a href="Interstitial-Cystitis.html">Interstitial Cystitis</a></li>
-                                    <li><a href="Overactive-Bladder.html">Overactive Bladder</a></li>
-                                    <li><a href="Vesicovaginal-Fistula.html">Vesicovaginal Fistula</a></li>
-                                </ul>
-                            </div>
+                    <!-- Footer - News -->
+                    <div class="col-lg-4 footer_col">
+                        <div class="footer_links footer_column">
+                            <div class="footer_title">Useful Links</div>
+                            <ul>
+                                <li><a href="Uro-Oncology.html">Uro-Oncology</a></li>
+                                <li><a href="Urethral-Stricture.html">Urethral Stricture</a></li>
+                                <li><a href="Urinary-Cancer-Treatment.html">Urinary Cancer Treatment</a></li>
+                                <li><a href="Urethral-Stricture.html">Urethral Stricture</a></li>
+                                <li><a href="Male-Infertility.html">Male Infertility</a></li>
+                                <li><a href="Prostate-Cancer.html">Prostate Cancer</a></li>
+                                <li><a href="Prostate-Surgery.html">Prostate Surgery</a></li>
+                                <li><a href="Erectile-Dysfunction.html">Erectile Dysfunction</a></li>
+                                <li><a href="Female-Urinary-Incontinence.html">Female Urinary Incontinence</a></li>
+                                <li><a href="Interstitial-Cystitis.html">Interstitial Cystitis</a></li>
+                                <li><a href="Overactive-Bladder.html">Overactive Bladder</a></li>
+                                <li><a href="Vesicovaginal-Fistula.html">Vesicovaginal Fistula</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     </div>
 
@@ -2088,4 +2237,5 @@
 
 
 </body>
+
 </html>
