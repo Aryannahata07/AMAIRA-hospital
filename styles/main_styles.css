@@ -676,7 +676,7 @@ section {
 
 .home_content {
 	position: absolute;
-	top: 32%;
+	top: 28%;
 	left: 0;
 	width: 100%;
 }
@@ -686,7 +686,7 @@ section {
 }
 
 .home_title h1 {
-	font-size: 69.24px;
+	font-size: 66px;
 	font-weight: 900;
 	color: #272727;
 	line-height: 1.0398;

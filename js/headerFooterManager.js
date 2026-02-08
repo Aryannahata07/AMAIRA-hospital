@@ -338,7 +338,7 @@ class SpecialHeader extends HTMLElement {
                             </div>
                             <div class="logo_line">
                                 <div class="logo_text"><b>AMAIRA</b></div>
-                                <div class="logo_sub"><b>Urology & Fertility Care</b></div>
+                                <div class="logo_sub" style="text-transform: uppercase;"><b>Urology and Fertility Care</b></div>
                             </div>
                         </div>
                     </a>
@@ -418,8 +418,8 @@ class SpecialHeader extends HTMLElement {
     }
 }
 class SpecialFooter extends HTMLElement {
-   connectedCallback() {
-      this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
        <!-- Footer -->
 
         <footer class="footer">
@@ -435,10 +435,10 @@ class SpecialFooter extends HTMLElement {
                                         <div class="footer_logo_content">
                                             <div class="footer_logo d-flex flex-row align-items-center justify-content-center ">
                                                     <img src="./AMIRA_LOGO-removebg-preview.png" alt="amira logo" class="logo_image" >
-                                                    <div class="logo_line">
+                                                        <div class="logo_line">
                                                         <div class="footer_logo_text"><b>AMAIRA</b></div>
                                                     
-                                                    <div class="logo_sub"><b>Urology & Fertility Care</b></div>
+                                                    <div class="logo_sub"><b>UROLOGY & FERTILITY CARE</b></div>
                                                 </div>
                                             </div>
                                             </div>
@@ -503,7 +503,7 @@ class SpecialFooter extends HTMLElement {
             </div>
         </footer>
       `;
-   }
+    }
 }
 
 customElements.define('special-header', SpecialHeader);
