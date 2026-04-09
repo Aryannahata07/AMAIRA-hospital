@@ -142,9 +142,17 @@ class SpecialHeader extends HTMLElement {
     font-weight: 400;
     color: #8f8e8e;
     padding-left: 3px;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
+    .logo-and-nav {
+        gap: 20px;
+        justify-content: space-between;
+        padding: 0 15px;
+        width: 100%;
+    }
+
     .logo_content {
         gap: 10px; /* reduce spacing */
     }
@@ -158,7 +166,7 @@ class SpecialHeader extends HTMLElement {
     }
 
     .logo_sub {
-        font-size: 12px; /* scale down */
+        font-size: 11px; /* scale down */
     }
 }
 
