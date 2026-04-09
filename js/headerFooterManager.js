@@ -465,15 +465,15 @@ class SpecialFooter extends HTMLElement {
                                     <li><a href="Urology.html">Urology</a></li>
                                     <li><a href="Infertility.html">Infertility Services</a></li>
                                     <li><a href="Obstetrics-&-Gynecology-Services.html">Other Obstetrics & Gynecology</a></li>
-                                    <li><a href="Surgery.html#Ureteric-Stones">Ureteric Stones</a></li>
-                                    <li><a href="Surgery.html#Blader-Stones">Blader Stones</a></li>
-                                    <li><a href="Surgery.html#Antegrade-PCNL">Antegrade PCNL</a></li>
-                                    <li><a href="Surgery.html#ESWL">ESWL</a></li>
-                                    <li><a href="Surgery.html#PCNL">PCNL</a></li>
-                                    <li><a href="Surgery.html#Mini-PCNL">Mini PCNL</a></li>
-                                    <li><a href="Surgery.html#Ultra-Mini-PCNL">Ultra Mini PCNL</a></li>
-                                    <li><a href="Surgery.html#RIRS">RIRS</a></li>
-                                    <li><a href="Laser-Treatment-for-Kidney-Stones.html">Laser Treatment for Kidney Stones</a></li>
+                                    <li><a href="Urology.html#surgery">Ureteric Stones</a></li>
+                                    <li><a href="Urology.html#surgery">Bladder Stones</a></li>
+                                    <li><a href="Urology.html#surgery">Antegrade PCNL</a></li>
+                                    <li><a href="Urology.html#surgery">ESWL</a></li>
+                                    <li><a href="Urology.html#surgery">PCNL</a></li>
+                                    <li><a href="Urology.html#surgery">Mini PCNL</a></li>
+                                    <li><a href="Urology.html#surgery">Ultra Mini PCNL</a></li>
+                                    <li><a href="Urology.html#surgery">RIRS</a></li>
+                                    <li><a href="Urology.html#other-services">Laser Treatment for Kidney Stones</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -483,18 +483,17 @@ class SpecialFooter extends HTMLElement {
                             <div class="footer_links footer_column">
                                 <div class="footer_title">Useful Links</div>
                                 <ul>
-                                    <li><a href="Uro-Oncology.html">Uro-Oncology</a></li>
-                                    <li><a href="Urethral-Stricture.html">Urethral Stricture</a></li>
-                                    <li><a href="Urinary-Cancer-Treatment.html">Urinary Cancer Treatment</a></li>
-                                    <li><a href="Urethral-Stricture.html">Urethral Stricture</a></li>
-                                    <li><a href="Male-Infertility.html">Male Infertility</a></li>
-                                    <li><a href="Prostate-Cancer.html">Prostate Cancer</a></li>
-                                    <li><a href="Prostate-Surgery.html">Prostate Surgery</a></li>
-                                    <li><a href="Erectile-Dysfunction.html">Erectile Dysfunction</a></li>
-                                    <li><a href="Female-Urinary-Incontinence.html">Female Urinary Incontinence</a></li>
-                                    <li><a href="Interstitial-Cystitis.html">Interstitial Cystitis</a></li>
-                                    <li><a href="Overactive-Bladder.html">Overactive Bladder</a></li>
-                                    <li><a href="Vesicovaginal-Fistula.html">Vesicovaginal Fistula</a></li>
+                                    <li><a href="Urology.html#other-services">Uro-Oncology</a></li>
+                                    <li><a href="Urology.html#male">Urethral Stricture</a></li>
+                                    <li><a href="Urology.html#other-services">Urinary Cancer Treatment</a></li>
+                                    <li><a href="Urology.html#male">Male Infertility</a></li>
+                                    <li><a href="Urology.html#male">Prostate Cancer</a></li>
+                                    <li><a href="Urology.html#male">Prostate Surgery</a></li>
+                                    <li><a href="Urology.html#male">Erectile Dysfunction</a></li>
+                                    <li><a href="Urology.html#female">Female Urinary Incontinence</a></li>
+                                    <li><a href="Urology.html#female">Interstitial Cystitis</a></li>
+                                    <li><a href="Urology.html#female">Overactive Bladder</a></li>
+                                    <li><a href="Urology.html#female">Vesicovaginal Fistula</a></li>
                                 </ul>
                             </div>
                         </div>
