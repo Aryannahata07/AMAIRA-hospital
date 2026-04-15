@@ -342,6 +342,7 @@
 
 	.service-card {
 		width: 100%;
+		max-width: none;
 		height: auto;
 		min-height: 100px;
 		padding: 20px;

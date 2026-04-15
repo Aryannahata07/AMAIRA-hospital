@@ -719,6 +719,7 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 20px;
+	box-sizing: border-box;
 }
 
 .services-container {
@@ -726,12 +727,15 @@ section {
 	gap: 20px;
 	flex-wrap: wrap;
 	justify-content: center;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .service-card {
 	background: linear-gradient(135deg, #283290 0%, #536493 100%);
 	padding: 20px;
-	width: 280px;
+	width: 100%;
+	max-width: 280px;
 	height: 140px;
 	border-radius: 20px;
 	display: flex;
@@ -980,7 +984,7 @@ Card
 *********************************/
 .card-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 	gap: 25px;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -1074,12 +1078,12 @@ Card
 
 .sidebyside .text-content {
 	flex: 1 1 60%;
-	min-width: 300px;
+	min-width: min(100%, 300px);
 }
 
 .sidebyside .image {
 	flex: 1 1 35%;
-	min-width: 280px;
+	min-width: min(100%, 280px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
